@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size: 12px;
+    font-weight: normal;
+}
+img{
+    display: inline-block;
+}
+head{
+    height: 98px;
+}
+h1{
+    width: 1130px;
+    height: 98px;
+    margin: 0 auto;
+}
+main{
+    height: 588px;
+    background: url(../images/login-img/banner.jpg) no-repeat;
+}
