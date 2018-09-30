@@ -11,7 +11,7 @@ ul,li{
 }
 a{
     text-decoration: none;
-    font-size: 14px;
+    font-size: 12px;
 }
 /* header */
 #header{
@@ -33,7 +33,7 @@ a{
     height: 588px;
     margin: 0 auto;
 }
-#banner form{
+#banner .login-register{
     width: 348px;
     height: 494px;
     float: right;
@@ -69,6 +69,10 @@ a{
 #banner .header>span:last-child:hover{
     color: #ef5b00;
 }
+/*****************账号登录******************/
+#banner form{
+    /* display: none; */
+}
 #banner form input{
     outline: none;
     width: 318px;
@@ -85,7 +89,7 @@ a{
     height: 50px;
     background-color: #ef5b00;
     color: #fff;
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
     border: 0;
     margin-bottom: 13px;
@@ -93,19 +97,19 @@ a{
     cursor: pointer;
 }
 #banner input::-webkit-input-placeholder{
-    font-size: 14px;
+    font-size: 12px;
     color: #969696;
 }
 #banner a.loginTel{
-    line-height: 14px;
-    font-size: 14px;
+    line-height: 12px;
+    font-size: 12px;
     color: #ef5b00;
     float: left;
 }
 #banner form > p{
     float: right;
-    line-height: 14px;
-    font-size: 14px;
+    line-height: 12px;
+    font-size: 12px;
     color: #999999;
 }
 #banner form p > a{
@@ -124,20 +128,116 @@ a{
     padding: 0 38px;
 }
 #banner form .othLogin{
-    line-height: 14px;
-    font-size: 14px;
+    line-height: 12px;
+    font-size: 12px;
     color: #bbbbbb;
 }
+/* 其他登录方式 */
 #banner form fieldset .icon{
     width: 30px;
     height: 30px;
     float: left;
+    border-radius: 50%;
     margin: 16px 19px;
 }
+/* qq */
 #banner form fieldset .icon.qq{
-    border-radius: 50%;
-    background: #0288d1 url(../images/login-img/icons_type.png) no-repeat -13px center;
+    background-color:  #0288d1;
+    cursor: pointer;
+}
+#banner form fieldset .icon.qq a{
+    display: inline-block;
+    margin: 5px 0;
+    width: 19px;
+    height: 19px;
+    background: url(../images/login-img/icons_type.png) no-repeat -19px center;
+}
+/* 微博 */
+#banner form fieldset .icon.weibo{
+    background-color: #d32f2f;
+    cursor: pointer;
+}
+#banner form fieldset .icon.weibo a{
+    display: inline-block;
+    margin: 5px 0;
+    width: 19px;
+    height: 19px;
+    background: url(../images/login-img/icons_type.png) no-repeat -38px center;
+}
+/* 支付宝 */
+#banner form fieldset .icon.pay{
+    background-color: #0288d1;
+    cursor: pointer;
+}
+#banner form fieldset .icon.pay a{
+    display: inline-block;
+    margin: 5px 0;
+    width: 24px;
+    height: 19px;
+    background: url(../images/login-img/icons_type.png) no-repeat -57px center;
+}
+/* 微信 */
+#banner form fieldset .icon.weChat{
+    cursor: pointer;
+    background: #00d20d url(../images/login-img/icons_type.png) no-repeat -81px center;
 }
 
 
 
+
+/*******************扫码登录**************** */
+#banner .loginEwm{
+    display: none;
+    text-align: center;
+    width: 348px;
+}
+#banner .loginEwm .imgEwm{
+    margin: 128px 0 22px 0;
+    clear: both;
+}
+#banner .loginEwm p{
+    line-height: 12px;
+    margin-bottom: 6px; 
+    color: #757575;
+}
+#banner .loginEwm p a{
+    color: #ff6700;
+}
+
+/* footer */
+#footer{
+    position: relative;
+    padding-top: 70px;
+    height: 78px;
+}
+#footer ul{
+    color: #867598;
+    width: 1130px;
+    text-align: center;
+    margin: 0 auto;
+}
+#footer ul li{
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    height: 12px;
+    line-height: 14px;
+    margin: 0 10px;
+    color: #757575;
+}
+#footer ul li:nth-child(1){
+    color: #333333;
+}
+#footer ul li a:hover{
+    color: #333333;
+}
+#footer ul p{
+    /* position: absolute; */
+    margin: 10px auto;
+    bottom: 31px;
+    line-height: 12px;
+    clear: left;
+}
+#footer ul a{
+    color: #757575;
+}

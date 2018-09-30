@@ -13,12 +13,13 @@
     </div>
     <div id="banner">
         <div class="banner-con">
-            <form action="">
+            <div class="login-register">
                 <div class="header">
                     <span>账号登录</span>
                     <span>扫码登录</span>
                 </div>
-                <form action="">
+                <!-- 账号登录 -->
+                <form action="" class="loginUserName">
                     <input type="text" class="username" placeholder="邮箱/手机号码/小米ID">
                     <input type="text" class="password" placeholder="密码">
                     <button>登录</button>
@@ -29,15 +30,32 @@
                     </p>
                     <fieldset>
                         <legend class="othLogin">其他方式登录</legend>
-                        <div class="icon qq"></div>
-                        <div class="icon weibo"></div>
-                        <div class="icon pay"></div>
-                        <div class="icon weChat"></div>
+                        <div class="icon qq"><a></a></div>
+                        <div class="icon weibo"><a></a></div>
+                        <div class="icon pay"><a></a></div>
+                        <div class="icon weChat"><a></a></div>
                     </fieldset>
                 </form>
-
-            </form>
+                <!-- 扫码登录 -->
+                <div class="loginEwm">
+                    <div class="imgEwm">
+                        <img src="images/login-img/xiaomi-Ewm.png" alt="">
+                    </div>
+                    <p>使用<a href="#">小米商城APP</a>扫一扫</p>
+                    <p>小米手机可打开「设置」&gt;「小米帐号」扫码登录</p>
+                </div>
+            </div>
         </div>
+    </div>
+    <div id="footer">
+        <ul>
+            <li><a href="#">简体</a></li>丨
+            <li><a href="#">繁体</a></li>丨
+            <li><a href="#">English</a></li>丨
+            <li><a href="#">常见问题</a></li>丨
+            <li><a href="#">隐私政策</a></li>
+            <p>小米公司版权所有-京ICP备10046444-<a href="#"><img src="images/login-img/ghs.png" alt="">京公网安备11010802020134号</a>-京ICP证110507号</p>
+        </ul>
     </div>
 </body>
 </html>
