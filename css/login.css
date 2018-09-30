@@ -11,7 +11,7 @@ ul,li{
 }
 a{
     text-decoration: none;
-    font-size: 12px;
+    font-size: 14px;
 }
 /* header */
 #header{
@@ -70,7 +70,7 @@ a{
     color: #ef5b00;
 }
 /*****************账号登录******************/
-#banner form{
+#banner form.loginUserName {
     /* display: none; */
 }
 #banner form input{
@@ -178,8 +178,15 @@ a{
 }
 /* 微信 */
 #banner form fieldset .icon.weChat{
+    background-color: #00d20d;
     cursor: pointer;
-    background: #00d20d url(../images/login-img/icons_type.png) no-repeat -81px center;
+}
+#banner form fieldset .icon.weChat a{
+    display: inline-block;
+    margin: 5px 0;
+    width: 24px;
+    height: 19px;
+    background:  url(../images/login-img/icons_type.png) no-repeat -84px center;
 }
 
 
