@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size: 12px;
+    font-weight: normal;
+}
+body{
+    background-color: #f9f9f9;
+}
+#main{
+    width: 854px;
+    height: 548px;
+    margin: 153px auto;
+    background: #fff;
+}
+#main h1{
+    width: 49px;
+    height: 48px;
+    margin: 0 auto;
+}
+#main h3{
+    margin-top: 48px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+}

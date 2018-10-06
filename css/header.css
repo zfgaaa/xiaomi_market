@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size: 16px;
+    font-weight: normal;
+}
+ul,li{
+    list-style: none;
+}
+b,strong{
+    font-weight: normal;
+}
+a{
+    text-decoration: none;
+    font-size: 12px;
+}
+i{
+    font-style: normal;
+}
+
+/* header */
+
+
+/* header nav left */
+#header{
+    height: 40px;
+    background-color: #333333;
+}
+#header .header-con{
+    width: 1224px;
+    height: 40px;
+    margin: 0 auto;
+    font-size: 11px;
+}
+#header .header-con ul{
+    display: block;
+    width: 540px;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+}
+#header .header-con ul li{
+    height: 12px;
+    float: left;
+}
+#header .header-con ul li a{
+    border-right: 1px solid #40403b;
+    height: 12px;
+    padding: 0 6px;
+    color: #b0b0b0;
+}
+#header .header-con ul li:last-child a{
+    border: 0;
+}
+#header .header-con ul li a:hover{
+    color: #fff;
+}
+
+
+
+/* header nav right */
+#header .header-con{
+
+    position: relative;
+}
+#header .header-con ol{
+    width: 280px;
+    height: 40px;
+    line-height: 40px;
+    float: right;
+}
+#header .header-con ol li{
+    float: left;
+}
+#header .header-con ol li:nth-child(3) a{
+    border: 0;
+}
+#header .header-con ol li a{
+    padding: 0 6px;
+    color: #b0b0b0;
+    border-right: 1px solid #40403b;
+}
+#header .header-con ol li a:hover{
+    color: #fff;
+}
+
+#header .header-con ol i{
+    position: absolute;
+    right: 0;
+    display: block;
+    width: 120px;
+    height: 40px;
+    color: #b0b0b0;
+    background: #424242;
+}
+#header .header-con ol i img{
+    margin: 10px 10px 0 10px;
+    width: 20px;
+    height:20px;
+}
+#header .header-con ol i span{
+    position: absolute;
+}
+#header .shopCarHide{
+    display: none;
+    position: absolute;
+    right:0;
+    top: 40px;
+    line-height: 100px;
+    text-align: center;
+    box-shadow: 2px 2px 2px #ccc;
+    width: 320px;
+    height: 100px;
+}
+#header .header-con ol i:hover{
+    color: red;
+    background: #fff;
+}
+#header .header-con ol i:hover .shopCarHide{
+    display: block;
+}
+
+
+
+/* header-nav */
+
+#header-nav{
+    height: 100px;
+    border-bottom: 1px solid #e0e0e0;
+}
+#header-nav .headerNavCon{
+    width: 1224px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+/* logo */
+#header-nav .headerNavCon h1{
+    margin-top: 22px;
+    float: left;
+}
+
+/* nav */
+#header-nav .headerNavCon  ul{
+    margin-left: 56px;
+    width: 740px;
+    height: 100px;
+    line-height: 100px;
+    float: left;
+}
+#header-nav .headerNavCon ul li{
+    float: left;
+}
+#header-nav .headerNavCon ul li a{
+    font-size: 15px;
+    margin: 0 10px;
+    color: black;
+}
+
+/* 搜索框 */
+#header-nav .headerNavCon form{
+    position: relative;
+    margin-top: 25px;
+    width: 296px;
+    height: 50px;
+    float: right;
+}
+#header-nav .headerNavCon form input{
+    outline: none;
+    width: 241px;
+    height: 46px;
+    float: left;
+    border: 1px solid #e0e0e0;
+}
+#header-nav .headerNavCon form button{
+    width: 50px;
+    height: 48px;
+    float: left;
+    border: 1px solid #e0e0e0;
+    border-left: 0;
+    background: #FFF;
+}
+#header-nav .headerNavCon form button img{
+    width: 18px;
+    height: 18px;
+}
+#header-nav .headerNavCon form button:hover{
+    background: #ff6700;
+}
+#header-nav .headerNavCon form span{
+    /* position: absolute; */
+    font-size: 12px;
+    background: #eeeeee;
+}
+#header-nav .headerNavCon form span a{
+    color: #757584;
+    margin: 0 4px;
+}
+#header-nav .headerNavCon form p{
+    position: absolute;
+    height: 16px;
+    left: 116px;
+    top: 12px;
+}
+#header-nav .headerNavCon form span:hover{
+    background: #ff6700;
+}
+#header-nav .headerNavCon form span:hover a{
+    color: #fff;
+}

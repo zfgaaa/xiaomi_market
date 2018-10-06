@@ -1,0 +1,432 @@
+/* title */
+#title{
+    height: 63px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 5px 2px 10px #e0e0e0;
+}
+#title .title-con{
+    width: 1224px;
+    height: 63px;
+    margin: 0 auto;
+    line-height: 63px;
+}
+#title .title-con .text{
+    float: left;
+    height: 18px;
+    font-size: 18px;
+}
+#title .title-con ul{
+    width: 275px;
+    height: 63px;
+    line-height: 63px;
+    float: right;
+}
+#title .title-con ul li{
+    height: 14px;
+    float: left;
+}
+#title .title-con ul li a{
+    padding: 0 8px;
+    border-right: 1px solid #e9e0e9;
+    color: #616161;
+    font-size: 14px;
+}
+#title .title-con ul li:last-child a{
+    border-right: 0;
+}
+
+
+/* prompt */
+#prompt{
+    height: 48px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+#prompt .prompt-con{
+    width: 1224px;
+    height: 48px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 48px;
+}
+#prompt .prompt-con p{
+    font-size: 12px;
+}
+#prompt .prompt-con p span{
+    margin: 0 15px;
+}
+#prompt .prompt-con p span:nth-child(2) a{
+    color: #ff6700;
+    cursor: pointer;
+}
+#prompt .prompt-con p span:nth-child(3){
+    cursor: pointer;
+    color: #b5b5b5;
+}
+
+/* main */
+#main .main-con{
+    width: 1224px;
+    /* height: 1600px; */
+    padding-top: 33px; 
+    margin: 0 auto;
+}
+#main .main-con .main-left{
+    width: 618px;
+    float: left;
+}
+#main .main-con .main-right{
+    width: 606px;
+    float: right;
+}
+
+/***************** main left ********************/
+/* swiper */
+#main .main-left .swiper{
+    position: relative;
+    width: 560px;
+    height: 560px;
+}
+#main .main-left .swiper-con{
+    width: 560px;
+    height: 560px;
+    overflow: hidden;
+}
+#main .main-left .swiper ul{
+    position: absolute;
+    bottom: 15px;
+    left: 165px;
+}
+#main .main-left .swiper ul li{
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    margin:0 2px; 
+    cursor: pointer;
+    background: #cccccc;
+}
+#main .main-left .swiper ul .active{
+    background: #a3a3a3;
+}
+
+/* swiperBtn */
+#main .main-left .swiper .btn-left{
+    cursor: pointer;
+    position: absolute;
+    width: 40px;
+    height: 69px;
+    left: 0;
+    top: 50%;
+    margin-top: -35px;
+    background: url(../images/detail-img/swiper-btn.png) no-repeat -83px center;
+}
+#main .main-left .swiper .btn-right{
+    cursor: pointer;
+    position: absolute;
+    width: 40px;
+    height: 69px;
+    right: 0;
+    top: 50%;
+    margin-top: -35px;
+    background: url(../images/detail-img/swiper-btn.png) no-repeat -126px center;
+}
+
+
+
+/******************** main right *******************/
+#main .main-right .title{
+    font-size: 23px;
+    line-height: 23px;
+    padding-bottom: 13px;
+}
+#main .main-right .phoneInform{
+    line-height: 22px;
+    font-size: 14px;
+    color: #b0b0b0;
+}
+#main .main-right .phoneInform span:first-child{
+    color: #ff4a00;
+}
+#main .main-right .price{
+    color: #ff4a00;
+    margin-top: 10px;
+}
+
+/* 赠米粉卡  */
+#main .main-right .card{
+    width: 606px;
+    height: 51px;
+    margin-top: 20px;
+    line-height: 51px;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+#main .main-right .card span:first-child{
+    width: 80px;
+    height: 25px;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 6px 27px;
+    background: #ff6700;
+    color: #FFF;
+}
+#main .main-right .card span:last-child{
+    margin-left: 9px;
+    font-size: 12px;
+}
+
+/* 地址 */
+#main .main-right .address{
+    width: 606px;
+    height: 104px;
+    background: #fafafa;
+    border: 1px solid #e0e0e0;
+    line-height: 104px;
+    margin: 40px 0;
+}
+#main .main-right .address img{
+    width: 24px;
+    height: 24px;
+    margin-left: 5px;
+}
+
+
+/* 选择版本 */
+#main .phoneList {
+    width: 606px;
+    height: 144px;
+}
+#main .phoneList p{
+    font-size: 18px;
+    line-height: 18px;
+}
+#main .phoneList .listCon{
+    cursor: pointer;
+    position: relative;
+    width: 298px;
+    height: 44px;
+    float: left;
+    margin-top: 17px;
+    line-height: 44px;
+    border: 1px solid #b0b0b0;
+}
+#main .phoneList .listCon:nth-child(2){
+    margin-right: 6px;
+    border:1px solid #ff6700;
+}
+#main .phoneList .listCon:nth-child(2) span:first-child{
+    color: #ff6700;
+}
+#main .phoneList .listCon:nth-child(2) span:last-child{
+    color: #757575;
+}
+#main .phoneList .listCon span:first-child{
+    width: 273px;
+    font-size: 12px;
+    padding-left: 27px;
+}
+#main .phoneList .listCon span:last-child{
+    position: absolute;
+    right: 28px;
+    font-size: 12px;
+    color: #e0e0e0;
+}
+
+/* 选择颜色 */
+#main .phoneColor {
+    height: 81px;
+    margin-top: 28px;
+    width: 606px;
+}
+#main .phoneColor p{
+    font-size: 18px;
+    line-height: 18px;
+}
+#main .phoneColor img{
+    width: 12px;
+    height: 12px;
+}
+#main .phoneColor .phoneColorList{
+    cursor: pointer;
+    text-align: center;
+    width: 298px;
+    height: 44px;
+    margin-top: 17px;
+    line-height: 44px;
+    border:1px solid #ff6700;
+}
+
+#main .phoneColor .phoneColorList span:last-child{
+    font-size: 12px;
+    line-height: 12px;
+    color: #ff6700;
+}
+
+/* 选择小米提供的保障服务 */
+#main .phoneServer{
+    width: 606px;
+    height: 313px;
+}
+#main .phoneServer p{
+    margin-top: 28px;
+    margin-bottom: 14px;
+    font-size: 18px;
+    line-height: 18px;
+}
+#main .phoneServer p a{
+    color: #ff6700;
+    float: right;
+}
+#main .phoneServer .phoneServerList{
+    width: 606px;
+    height: 139px;
+    border: 1px solid #e0e0e0;
+}
+#main .phoneServer .phoneServerList:last-child{
+    border-top: 0;
+}
+#main .phoneServerList .left{
+    position: relative;
+    width: 55px;
+    height: 139px;
+    float: left;
+}
+#main .phoneServerList .left em{
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 53px;
+    display: block;
+    border-radius: 50%;
+    border: 1px solid #e0e0e0;
+    width: 18px;
+    color: #FFF;
+    height: 18px;
+    line-height: 18px;
+
+}
+#main .phoneServerList .center{
+    position: relative;
+    width: 86px;
+    height: 139px;
+    float: left;
+}
+#main .phoneServerList .center img{
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+}
+#main .phoneServerList .right{
+    width: 463px;
+    height: 139px;
+    float: left;
+}
+#main .phoneServerList .right p:first-child{
+    font-size: 16px;
+}
+#main .phoneServerList .right p:nth-child(2){
+    font-size: 12px;
+    margin-top: 0;
+    color: #b0b0b0;
+}
+#main .phoneServerList .right p:nth-child(3){
+    font-size: 12px;
+    margin-top: 0;
+}
+#main .phoneServerList .right p:nth-child(3) em{
+    cursor: pointer;
+    display: block;
+    width: 14px;
+    height: 16px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    line-height: 16px;
+    border: 1px solid #b0b0b0;
+    float: left;
+}
+#main .phoneServerList .right p:nth-child(3) span{
+    display: block;
+    float: left;
+    font-size: 14px;
+    color: #757575;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+#main .phoneServerList .right p:nth-child(3) a{
+    float: left;
+}
+#main .phoneServerList .right p:nth-child(3) span:last-child{
+    float: right;
+}
+
+/* 价格 */
+
+#main .main-right .phonePrice{
+    padding-top: 38px;
+    width: 606px;
+    height: 102px;
+    margin-top: 30px;
+    background: #f9f9fa;
+}
+#main .main-right .phonePrice p:first-child{
+    line-height: 12px;
+    position: relative;
+    font-size: 12px;
+    margin-left: 30px;
+}
+#main .main-right .phonePrice p:first-child span:last-child{
+    position: absolute;
+    right: 30px;
+}
+#main .main-right .phonePrice p:last-child{
+    margin-left: 30px;
+    font-size: 23px;
+    line-height: 23px;
+    margin-top: 33px;
+    color: #ff6700;
+}
+
+/* 加入购物车 */
+#main .main-right .btn-car{
+    margin-top: 33px;
+    margin-bottom: 23px;
+}
+#main .main-right .btn-car input:first-child{
+    cursor: pointer;
+    width: 300px;
+    height: 54px;
+    border: 0;
+    font-size: 16px;
+    margin-right: 14px;
+    color: #fff;
+    background: #ff6700;
+}
+#main .main-right .btn-car input:last-child{
+    cursor: pointer;
+    width: 142px;
+    height: 54px;
+    border: 0;
+    color: #fff;
+    font-size: 16px;
+    background: #b0b0b0;
+}
+
+
+#main .main-right bottom{
+    width: 606px;
+    height: 21px;
+    line-height: 21px;
+}
+#main .main-right .bottom p{
+    display: inline-block;
+    color: #b0b0b0;
+    font-size: 12px;
+}
+#main .main-right .bottom p img{
+    bottom: 0;
+}
+#main .main-right .bottom p span{
+}
