@@ -67,7 +67,7 @@
 /* main */
 #main .main-con{
     width: 1224px;
-    /* height: 1600px; */
+    height: 1345px;
     padding-top: 33px; 
     margin: 0 auto;
 }
@@ -177,19 +177,33 @@
 
 /* 地址 */
 #main .main-right .address{
-    width: 606px;
-    height: 104px;
+    width: 583px;
+    height: 74px;
     background: #fafafa;
     border: 1px solid #e0e0e0;
-    line-height: 104px;
+    padding-top: 30px;
+    padding-left: 23px;
     margin: 40px 0;
 }
-#main .main-right .address img{
-    width: 24px;
-    height: 24px;
-    margin-left: 5px;
+#main .main-right .address p{
+    font-size: 14px;
 }
-
+#main .main-right .address p span{
+    font-size: 20px;
+    margin-right: 6px;
+    color: #a1a1a6;
+}
+#main .main-right .address p a{
+    color: #ff6700;
+    font-size: 14px;
+    margin-left: 10px;
+}
+#main .main-right .address em{
+    color: #ff6700;
+    font-style: normal;
+    font-size: 14px;
+    margin-left:25px;
+}
 
 /* 选择版本 */
 #main .phoneList {
@@ -394,7 +408,7 @@
     margin-top: 33px;
     margin-bottom: 23px;
 }
-#main .main-right .btn-car input:first-child{
+#main .main-right .btn-car button:first-child{
     cursor: pointer;
     width: 300px;
     height: 54px;
@@ -404,7 +418,8 @@
     color: #fff;
     background: #ff6700;
 }
-#main .main-right .btn-car input:last-child{
+
+#main .main-right .btn-car button:last-child{
     cursor: pointer;
     width: 142px;
     height: 54px;
@@ -413,20 +428,25 @@
     font-size: 16px;
     background: #b0b0b0;
 }
+#main .main-right .btn-car button:last-child span{
+    margin-right: 5px;
+    font-size: 16px;
+}
 
 
-#main .main-right bottom{
+#main .main-right .bottom{
     width: 606px;
     height: 21px;
     line-height: 21px;
+    margin-bottom: 80px;
 }
 #main .main-right .bottom p{
     display: inline-block;
-    color: #b0b0b0;
+    margin-right: 20px;
     font-size: 12px;
-}
-#main .main-right .bottom p img{
-    bottom: 0;
+    color: #b0b0b0;
 }
 #main .main-right .bottom p span{
+    font-size: 20px;
+    vertical-align: -2px;
 }

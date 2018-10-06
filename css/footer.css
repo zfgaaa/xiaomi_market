@@ -1,1 +1,165 @@
+/* footer */
+#footer{
+    height: 271px;
+}
+#footer .footer-con{
+    width: 1224px;
+    height: 271px;
+    margin: 0 auto;
+}
+#footer .footer-con .footer-server{
+    padding: 27px 0;
+    width: 1224px;
+    height: 24px;
+    line-height: 78px;
+    border-bottom: 1px solid #eeeeee;
+}
+#footer .footer-con .footer-server li{
+    width: 242px;
+    height: 25px;
+    float: left;
+    line-height: 25px;
+    border-right: 1px solid #e0e0e0;
+    text-align: center;
+}
+#footer .footer-con .footer-server li:last-child{
+    border: 0;
+}
+#footer .footer-con .footer-server li a{
+    color: #616161;
+    -webkit-transition: color .2s;
+    transition: color .2s;
+    font-size: 16px;
+}
+#footer .footer-con .footer-server li a i{
+    font-size: 24px;
+    line-height: 24px;
+    vertical-align: -4px;
+    margin-right: 6px;
+}
+#footer .footer-con .footer-server li a:hover{
+    color: #ff6700;
+}
+#footer .footer-con .footer-nav{
+    padding-top: 42px;
+    width: 1224px;
+    height: 150px;
+}
+#footer .footer-con .footer-nav dl{
+    float: left;
+    margin-right: 104px;
+}
+#footer .footer-con .footer-nav dl dt{
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 32px;
+}
+#footer .footer-con .footer-nav dl dd{
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 17px;
+}
+#footer .footer-con .footer-nav dl dd a{
+    color: #757575;
+}
+#footer .footer-con .footer-nav dl dd a:hover{
+    color: #ff6700;
+}
 
+/* call-me */
+
+#footer .footer-con .call-me{
+    width: 250px;
+    height: 115px;
+    float: right;
+    text-align: center;
+    border-left: 1px solid #e0e0e0;
+}
+#footer .footer-con .call-me p:first-child{
+    margin: 0 0 5px;
+    font-size: 22px;
+    line-height: 1;
+    color: #ff6700;
+}
+#footer .footer-con .call-me p:nth-child(2){
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 7px;
+}
+#footer .footer-con .call-me p:nth-child(3){
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 18px;
+}
+#footer .footer-con .call-me button{
+    
+    width: 120px;
+    height: 30px;
+    border: 1px solid #ff6700;
+    background: white;
+    color: #ff6700;
+    -webkit-transition: background .2s;
+    transition: background .2s;
+    font-size: 12px;
+}
+#footer .footer-con .call-me button i{
+    margin-right: 2px;
+}
+#footer .footer-con .call-me button:hover{
+    background: #ff6700;
+    color: #fff;
+}
+#footer .copyRight{
+    height: 166px;
+    background: #fafafa;
+}
+#footer .copyRight .copyRight-con{
+    width: 1224px;
+    height: 166px;
+    margin: 0 auto;
+}
+#footer .copyRight .copyRight-con .top{
+    width: 1224px;
+    height: 57px;
+    padding-top: 30px;
+}
+#footer .copyRight .copyRight-con .top .top-left{
+    float: left;
+    width: 56px;
+    height: 57px;
+    margin-right: 10px;
+}
+#footer .copyRight .copyRight-con .top .top-center{
+    float: left;
+    font-size: 11px;
+}
+#footer .copyRight .copyRight-con .top .top-center ul li{
+    float: left;
+}
+#footer .copyRight .copyRight-con .top .top-center ul li a{
+    color: #757575;
+}
+#footer .copyRight .copyRight-con .top .top-center ul li a:hover{
+    color: #ff6700;
+}
+#footer .copyRight .copyRight-con .top .top-center p{
+    color: #b0b0b0;
+}
+#footer .copyRight .copyRight-con .top .top-center p a{
+    color: #b0b0b0;
+}
+#footer .copyRight .copyRight-con .top .top-center p a:hover{
+    color: #ff6700;
+}
+#footer .copyRight .copyRight-con .top .top-right{
+    float: right;
+}
+#footer .copyRight .copyRight-con .top .top-right img{
+    width: 80px;
+    height: 25px;
+    cursor: pointer;
+}
+#footer .copyRight .copyRight-con .bottom{
+    text-align: center;
+    margin-top: 30px;
+}
