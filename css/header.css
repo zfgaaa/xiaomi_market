@@ -51,6 +51,7 @@ i{
     padding: 0 6px;
     color: #b0b0b0;
 }
+
 #header .header-con ul li:last-child a{
     border: 0;
 }
@@ -157,6 +158,9 @@ i{
     font-size: 15px;
     margin: 0 10px;
     color: black;
+}
+#header-nav .headerNavCon ul li a:hover{
+    color: #ff6700;
 }
 
 /* 搜索框 */

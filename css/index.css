@@ -1,0 +1,303 @@
+
+/* top */
+#top{
+    height: 120px;
+    background: url(../images/index-img/header-top.jpg) no-repeat center;
+}
+
+/* banner */
+#banner{
+    height: 460px;
+}
+#banner .banner-con{
+    position: relative;
+    width: 1224px;
+    height: 460px;
+    margin: 0 auto;
+}
+#banner .banner-con img{
+    max-width: 100%;
+}
+#banner .banner-con ul{
+    padding: 20px 0;
+    position: absolute;
+    top: 0;
+    left: 1px;
+    background-color: rgba(51,51,51,0.5);
+    width: 235px;
+    height: 420px;
+}
+#banner .banner-con ul li{
+    padding-left: 30px;
+    padding-right: 24px;
+    width: 181px;
+    height: 42px;
+    line-height: 42px;
+}
+#banner .banner-con ul li:hover{
+    background: orange;
+}
+#banner .banner-con ul li a span:first-child{
+    float: left;
+}
+#banner .banner-con ul li a span:last-child{
+    float: right;
+}
+#banner .banner-con ul li a{
+    font-size: 14px;
+    color: #fff;
+}
+#banner .banner-con .btn-left{
+    cursor: pointer;
+    position: absolute;
+    left: 236px;
+    top: 50%;
+    margin-top: -35px;
+    background: url(../images/index-img/btn-icon.png) no-repeat -84px 0;
+    width: 41px;
+    height: 69px;
+}
+#banner .banner-con .btn-right{
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    margin-top: -35px;
+    background: url(../images/index-img/btn-icon.png) no-repeat -125px 0;
+    width: 41px;
+    height: 69px;
+}
+#banner .banner-con ol{
+    position: absolute;
+    bottom: 25px;
+    right: 34px;
+}
+#banner .banner-con ol li{
+    cursor: pointer;
+    display: inline-block;
+    background: #8b1a1c;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+#banner .banner-con ol li.active{
+    background: #f38588;
+}
+#banner .banner-con ol li:hover{
+    -webkit-transition: background .2s;
+    transition: background .2s;
+    background: #f38588;
+}
+
+/* listNav */
+#listNav{
+    margin-top: 14px;
+    margin-bottom: 26px;
+    height: 170px;
+}
+#listNav .listNav-con{
+    width: 1224px;
+    height: 170px;
+    margin: 0 auto;
+}
+#listNav .listNav-con .nav{
+    width: 228px;
+    height: 164px;
+    margin: 0;
+    padding: 3px;
+    font-size: 12px;
+    text-align: center;
+    background: #5f5750;
+    float: left;
+}
+#listNav .listNav-con .nav li{
+    position: relative;
+    float: left;
+    width: 70px;
+    height: 82px;
+    padding: 0 3px;
+}
+#listNav .listNav-con .nav li a{
+    display: block;
+    padding-top: 18px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: rgba(255,255,255,0.7);
+}
+#listNav .listNav-con .nav li a i{
+    display: block;
+    height: 24px;
+    margin-bottom: 4px;
+    font-size: 24px;
+    line-height: 24px;
+}
+#listNav .listNav-con img{
+    margin-left: 14px;
+    float: left;
+    width: 316px;
+    height: 170px;
+}
+
+
+/* 小米闪购 */
+
+#mi-shop{
+    height: 398px;
+}
+
+#mi-shop .mi-shop-con{
+    width: 1224px;
+    height: 398px;
+    margin: 0 auto;
+}
+#mi-shop .mi-shop-con .top{
+    width: 1224px;
+    height: 58px;
+}
+#mi-shop .mi-shop-con .top .title{
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 58px;
+    color: #333;
+}
+#mi-shop .mi-shop-con .top .btn{
+    position: relative;
+    float: right;
+}
+#mi-shop .mi-shop-con .top .btn i{
+    line-height: 22px;
+    float: left;
+    text-align: center;
+    border: 1px solid #ccc;
+    width: 34px;
+    height: 22px;
+    margin-top: 20px;
+}
+#mi-shop .mi-shop-con .top .btn i:first-child{
+    border-right: 0;
+}
+#mi-shop .mi-shop-con .buttom{
+    width: 1224px;
+    height: 389px;
+}
+#mi-shop .mi-shop-con .buttom-con{
+    text-align: center;
+    float: left;
+    width: 233px;
+    height: 339px;
+    margin-left: 14px;
+    background: rgba(0,0,0,0.02);
+    /* background: #fafafa; */
+    border-top: 1px solid #e75d5a;
+}
+#mi-shop .mi-shop-con .buttom-con1{
+    padding-top: 60px;
+    text-align: center;
+    float: left;
+    margin-left: 0;
+    width: 234px;
+    height: 279px;
+    background: #f1eded;
+    border-top: 1px solid #e75d5a;
+}
+#mi-shop .mi-shop-con .buttom-con1 p{
+    font-size: 20px;
+    margin-bottom: 33px;
+    color: #e53934;
+}
+#mi-shop .mi-shop-con .buttom-con1 img+p{
+    font-size: 14px;
+    color: #6f6d6d;
+    margin-top: 35px;
+    line-height: 14px;
+}
+#mi-shop .mi-shop-con .buttom-con .time{
+    width: 168px;
+    height: 46px;
+    margin: 0 auto;
+}
+#mi-shop .mi-shop-con .buttom-con1 .time .hou{
+    display: inline-block;
+    text-align: center;
+    line-height: 46px;
+    width: 46px;
+    height: 46px;
+    background: #605751;
+    color: #FFF;
+}
+#mi-shop .mi-shop-con .buttom-con1 .time .min{
+    display: inline-block;
+    text-align: center;
+    line-height: 46px;
+    width: 46px;
+    height: 46px;
+    background: #605751;
+    color: #FFF;
+}
+#mi-shop .mi-shop-con .buttom-con1 .time .sec{
+    display: inline-block;
+    text-align: center;
+    line-height: 46px;
+    width: 46px;
+    height: 46px;
+    background: #605751;
+    color: #FFF;
+}
+#mi-shop .mi-shop-con .buttom-con1 .time span{
+    font-size: 16px;
+}
+#mi-shop .mi-shop-con .buttom-con .top{
+    display: block;
+    margin: 0 auto;
+    width: 64px;
+    height: 20px;
+    margin-bottom: 20px;
+    background: #e53935;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+}
+#mi-shop .mi-shop-con .buttom-con img{
+    width: 160px;
+    height: 165px;
+}
+#mi-shop .mi-shop-con .buttom-con .title{
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 11px;
+    margin-top: 30px;
+
+}
+#mi-shop .mi-shop-con .buttom-con .intro{
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 20px;
+    color: #adadad;
+}
+#mi-shop .mi-shop-con .buttom-con price {
+    font-size: 12px;
+    color: #fa6509;
+}
+#mi-shop .mi-shop-con .buttom-con span:last-child{
+    font-size: 12px;
+    color: #adadad;
+    text-decoration: line-through;
+}
+
+
+/* 手机 */
+#banner-MI8{
+    height: 120px;
+    margin: 42px 0;
+}
+#banner-MI8 .banner-MI8-con{
+    width: 1224px;
+    height: 120px;
+    margin: 0 auto;
+}
+#banner-MI8 img{
+    max-width: 100%;
+}
