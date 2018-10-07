@@ -5,7 +5,7 @@
     background: url(../images/index-img/header-top.jpg) no-repeat center;
 }
 
-/* banner */
+/* **********************banner*********** */
 #banner{
     height: 460px;
 }
@@ -90,7 +90,7 @@
     background: #f38588;
 }
 
-/* listNav */
+/* ***********listNav************* */
 #listNav{
     margin-top: 14px;
     margin-bottom: 26px;
@@ -141,7 +141,7 @@
 }
 
 
-/* 小米闪购 */
+/* ****************小米闪购**************** */
 
 #mi-shop{
     height: 398px;
@@ -288,7 +288,7 @@
 }
 
 
-/* 手机 */
+/* *******************手机***************** */
 #banner-MI8{
     height: 120px;
     margin: 42px 0;
@@ -300,4 +300,1411 @@
 }
 #banner-MI8 img{
     max-width: 100%;
+}
+
+/* main */
+
+
+#main{
+    height: 7000px;
+    background: #f5f5f5;
+}
+#main .main-con{
+    width: 1224px;
+    height: 7000px;
+    padding-top: 23px;
+    margin: 0 auto;
+}
+/* phone */
+
+
+#main .phone{
+    height: 671px;
+    width: 1224px;
+}
+#main .phone .title{
+    width: 1224px;
+    height: 57px;
+}
+#main .phone .title span:first-child{
+    float: left;
+    font-size: 21px;
+    line-height: 57px;
+    color: #333;
+}
+#main .phone .title a{
+    -webkit-transition: color .2s;
+    transition: color .2s;
+    line-height: 57px;
+    float: right;
+    font-size: 16px;
+    color: #333;
+}
+#main .phone .title a i{
+    -webkit-transition: color .2s;
+    transition: color .2s;
+    vertical-align: -3px;
+    font-size: 22px;
+    margin-left: 5px;
+    color: #b0b0b0;
+}
+#main .phone .title a:hover{
+    color: #ff6700;
+}
+#main .phone .title a:hover i{
+    color: #ff6700;
+}
+
+#main .phone .buttom .left{
+    width: 234px;
+    height: 614px;
+    float: left;
+}
+#main .phone .buttom .left img{
+    width: 234px;
+    height: 614px;
+}
+#main .phone .buttom .right{
+    width: 990px;
+    height: 614px;
+    float: left;
+}
+#main .phone .buttom .right .phone-con{
+    position: relative;
+    transition: top 0.3s;
+    cursor: pointer;
+    text-align: center;
+    width: 234px;
+    height: 300px;
+    background: #fff;
+    float: left;
+    margin-left: 13px;
+}
+#main .phone .buttom .right .phone-con:nth-child(5){
+   margin-top: 14px;
+}
+#main .phone .buttom .right .phone-con:nth-child(6){
+    margin-top: 14px;
+ }
+ #main .phone .buttom .right .phone-con:nth-child(7){
+    margin-top: 14px;
+ }
+ #main .phone .buttom .right .phone-con:nth-child(8){
+    margin-top: 14px;
+ }
+
+
+#main .phone .buttom .right .phone-con .tip{
+    display: block;
+    margin: 0 auto;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    width: 64px;
+    height: 20px;
+    background: #83c44e;
+}
+#main .phone .buttom .right .phone-con img{
+    width: 160px;
+    height: 165px;
+}
+#main .phone .buttom .right .phone-con .phoneName{
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: 14px;
+    margin-bottom: 9px;
+}
+#main .phone .buttom .right .phone-con .intro{
+    font-size: 12px;
+    color: #b0b0b0;
+    line-height: 12px;
+    margin-bottom: 18px;
+}
+#main .phone .buttom .right .phone-con .price span:first-child{
+    color: #ff6700;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+#main .phone .buttom .right .phone-con:hover{
+    box-shadow: 2px 2px 40px #ccc;
+    top: -2px;
+}
+
+/* *******************家电****************** */
+
+#main .banner-TV{
+    height: 120px;
+    margin: 42px 0;
+}
+#main .banner-TV img{
+    max-width: 100%;
+}
+#main .ele{
+    width: 1224px;
+    height: 685px;
+}
+/* title */
+#main .ele .title{
+    width: 1224px;
+    height: 57px;
+}
+#main .ele .title span{
+    float: left;
+    font-size: 21px;
+    line-height: 57px;
+    color: #333;
+}
+#main .ele .ele-nav{
+    float: right;
+}
+#main .ele .ele-nav li{
+    cursor: pointer;
+    float: left;
+    padding-bottom: 2px;
+    margin: 4px 15px;
+    font-size: 14px;
+    color: #333;
+    transition: border 0.3s;
+}
+#main .ele .ele-nav li:hover{
+    border-bottom: 2px solid #ff6700;
+    color: #ff6700;
+
+}
+#main .ele .ele-nav li:last-child{
+    margin-right: 0;
+}
+
+/* ele-con */
+
+/* left */
+
+#main .ele .buttom .left{
+    width: 234px;
+    height: 614px;
+    float: left;
+}
+#main .ele .buttom .left img{
+    width: 234px;
+    height: 300px;
+}
+#main .ele .buttom .left .ele-con{
+    margin-left: 0;
+}
+
+/* right */
+#main .ele .buttom .right{
+    width: 990px;
+    height: 614px;
+    float: right;
+}
+
+#main .ele .ele-con{
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    left: 0;
+    text-align: center;
+    width: 234px;
+    height: 300px;
+    background: #fff;
+    float: left;
+    margin-top: 14px;
+    margin-left: 13px;
+    transition: top 0.3s; 
+}
+#main .ele .buttom .right .phone-con:nth-child(5){
+    margin-top: 14px;
+ }
+ #main .ele .buttom .right .phone-con:nth-child(6){
+     margin-top: 14px;
+  }
+  #main .ele .buttom .right .phone-con:nth-child(7){
+     margin-top: 14px;
+  }
+  #main .ele .buttom .right .phone-con:nth-child(8){
+     margin-top: 14px;
+  }
+ #main .ele .buttom .right .ele-con .tip{
+     display: block;
+     margin: 0 auto;
+     font-size: 12px;
+     text-align: center;
+     line-height: 20px;
+     color: #fff;
+     width: 64px;
+     height: 20px;
+     background: #83c44e;
+ }
+ #main .ele .buttom .right .ele-con img{
+     width: 160px;
+     height: 165px;
+ }
+ #main .ele .buttom .right .ele-con .phoneName{
+     font-size: 12px;
+     line-height: 12px;
+     margin-top: 14px;
+     margin-bottom: 9px;
+ }
+ #main .ele .buttom .right .ele-con .intro{
+     font-size: 12px;
+     color: #b0b0b0;
+     line-height: 12px;
+     margin-bottom: 18px;
+ }
+ #main .ele .buttom .right .ele-con .price span:first-child{
+     color: #ff6700;
+     font-size: 12px;
+     line-height: 12px;
+ }
+ #main .ele .buttom .ele-con:hover{
+     top: -2px;
+     box-shadow: 0px 2px 20px #ccc;
+ }
+ #main .ele .buttom .right .ele-con .hover{
+     position: relative;
+     top: 26px;
+     padding: 10px;
+     width: 214px;
+     height: 125px;
+     background: #ff6700;
+ }
+ #main .ele .buttom .right .ele-con .hover p{
+     font-size: 12px;
+     color: #fff;
+ }
+#main .ele .buttom .right .ele-con .hover span{
+    font-size: 12px;
+    color: rgb(236, 231, 231);
+ }
+ #main .ele .buttom .ele-con:hover .hover{
+     transition: top 0.2s;
+     top: -55px;
+ }
+ #main .ele .buttom .right .ele-con:nth-child(8){
+     width: 234px;
+     height: 143px;
+     text-align: left;
+ }
+ #main .ele .buttom .right .ele-con:nth-child(8) .left{
+     width: 70px;
+     height: 143px;
+     padding-left: 30px;
+     float: left;
+ }
+ #main .ele .buttom .right .ele-con:nth-child(8) .right img{
+     width: 100px;
+     height: 100px;
+     margin-top: 20px;
+ }
+ #main .ele .buttom .right .ele-con:nth-child(8) .right{
+    width: 100px;
+    height: 143px;
+    margin-right: 10px;
+    float: right;
+}
+#main .ele .buttom .right .ele-con:nth-child(8) .left p{
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 10px;
+    margin-top: 32px;
+    color: #333;
+}
+#main .ele .buttom .right .ele-con:nth-child(8) .left span{
+    color: #ff6700;
+    font-size: 14px;
+}
+
+
+/* more */
+ #main .ele .buttom .right .ele-con:nth-child(9){
+    width: 234px;
+    height: 143px;
+    text-align: left;
+}
+#main .ele .buttom .right .ele-con:nth-child(9) .left{
+    width: 70px;
+    height: 143px;
+    padding-left: 30px;
+    float: left;
+}
+
+#main .ele .buttom .right .ele-con:nth-child(9) .right{
+   width: 100px;
+   height: 143px;
+   margin-right: 10px;
+   text-align: center;
+   line-height: 143px;
+   float: right;
+}
+#main .ele .buttom .right .ele-con:nth-child(9) .right i{
+    font-size: 50px;
+    color: #ff6700;
+}
+#main .ele .buttom .right .ele-con:nth-child(9) .left p{
+   font-size: 16px;
+   line-height: 14px;
+   margin-bottom: 5px;
+   margin-top: 50px;
+   color: #333;
+}
+#main .ele .buttom .right .ele-con:nth-child(9) .left span{
+   font-size: 12px;
+}
+
+
+/* *************智能************** */
+
+#main .banner-robot{
+    height: 120px;
+    margin: 42px 0;
+}
+#main .banner-robot img{
+    max-width: 100%;
+}
+#main .robot{
+    width: 1224px;
+    height: 685px;
+}
+#main .robot .title{
+    width: 1224px;
+    height: 57px;
+}
+#main .robot .title span{
+    float: left;
+    font-size: 21px;
+    line-height: 57px;
+    color: #333;
+}
+#main .robot .robot-nav{
+    float: right;
+}
+#main .robot .robot-nav li{
+    cursor: pointer;
+    float: left;
+    padding-bottom: 2px;
+    margin: 4px 15px;
+    font-size: 14px;
+    color: #333;
+    transition: border 0.3s;
+}
+#main .robot .robot-nav li:hover{
+    border-bottom: 2px solid #ff6700;
+    color: #ff6700;
+
+}
+#main .robot .robot-nav li:last-child{
+    margin-right: 0;
+}
+
+/* robot-con */
+
+/* left */
+
+#main .robot .buttom .left{
+    width: 234px;
+    height: 614px;
+    float: left;
+}
+#main .robot .buttom .left img{
+    width: 234px;
+    height: 300px;
+}
+#main .robot .buttom .left .robot-con{
+    margin-left: 0;
+}
+
+/* right */
+#main .robot .buttom .right{
+    width: 990px;
+    height: 614px;
+    float: right;
+}
+
+#main .robot .robot-con{
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 234px;
+    height: 300px;
+    background: #fff;
+    float: left;
+    margin-top: 14px;
+    margin-left: 13px;
+    transition: top 0.3s; 
+}
+#main .robot .buttom .right .phone-con:nth-child(5){
+    margin-top: 14px;
+ }
+ #main .robot .buttom .right .phone-con:nth-child(6){
+     margin-top: 14px;
+  }
+  #main .robot .buttom .right .phone-con:nth-child(7){
+     margin-top: 14px;
+  }
+  #main .robot .buttom .right .phone-con:nth-child(8){
+     margin-top: 14px;
+  }
+ #main .robot .buttom .right .robot-con .tip{
+     display: block;
+     margin: 0 auto;
+     font-size: 12px;
+     text-align: center;
+     line-height: 20px;
+     color: #fff;
+     width: 64px;
+     height: 20px;
+     background: #83c44e;
+ }
+ #main .robot .buttom .right .robot-con img{
+     width: 160px;
+     height: 165px;
+ }
+ #main .robot .buttom .right .robot-con .phoneName{
+     font-size: 12px;
+     line-height: 12px;
+     margin-top: 14px;
+     margin-bottom: 9px;
+ }
+ #main .robot .buttom .right .robot-con .intro{
+     font-size: 12px;
+     color: #b0b0b0;
+     line-height: 12px;
+     margin-bottom: 18px;
+ }
+ #main .robot .buttom .right .robot-con .price span:first-child{
+     color: #ff6700;
+     font-size: 12px;
+     line-height: 12px;
+ }
+ #main .robot .buttom .robot-con:hover{
+     top: -2px;
+     
+     box-shadow: 0px 2px 20px #ccc;
+ }
+ #main .robot .buttom .right .robot-con .hover{
+     position: relative;
+     top: 26px;
+     padding: 10px;
+     width: 214px;
+     height: 125px;
+     background: #ff6700;
+ }
+ #main .robot .buttom .right .robot-con .hover p{
+     font-size: 12px;
+     color: #fff;
+ }
+#main .robot .buttom .right .robot-con .hover span{
+    font-size: 12px;
+    color: rgb(236, 231, 231);
+ }
+ #main .robot .buttom .robot-con:hover .hover{
+     transition: top 0.2s;
+     top: -55px;
+ }
+ #main .robot .buttom .right .robot-con:nth-child(8){
+     width: 234px;
+     height: 143px;
+     text-align: left;
+ }
+ #main .robot .buttom .right .robot-con:nth-child(8) .left{
+     width: 70px;
+     height: 143px;
+     padding-left: 30px;
+     float: left;
+ }
+ #main .robot .buttom .right .robot-con:nth-child(8) .right img{
+     width: 100px;
+     height: 100px;
+     margin-top: 20px;
+ }
+ #main .robot .buttom .right .robot-con:nth-child(8) .right{
+    width: 100px;
+    height: 143px;
+    margin-right: 10px;
+    float: right;
+}
+#main .robot .buttom .right .robot-con:nth-child(8) .left p{
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 10px;
+    margin-top: 32px;
+    color: #333;
+}
+#main .robot .buttom .right .robot-con:nth-child(8) .left span{
+    color: #ff6700;
+    font-size: 14px;
+}
+
+
+/* more */
+ #main .robot .buttom .right .robot-con:nth-child(9){
+    width: 234px;
+    height: 143px;
+    text-align: left;
+}
+#main .robot .buttom .right .robot-con:nth-child(9) .left{
+    width: 70px;
+    height: 143px;
+    padding-left: 30px;
+    float: left;
+}
+
+#main .robot .buttom .right .robot-con:nth-child(9) .right{
+   width: 100px;
+   height: 143px;
+   margin-right: 10px;
+   text-align: center;
+   line-height: 143px;
+   float: right;
+}
+#main .robot .buttom .right .robot-con:nth-child(9) .right i{
+    font-size: 50px;
+    color: #ff6700;
+}
+#main .robot .buttom .right .robot-con:nth-child(9) .left p{
+   font-size: 16px;
+   line-height: 14px;
+   margin-bottom: 5px;
+   margin-top: 50px;
+   color: #333;
+}
+#main .robot .buttom .right .robot-con:nth-child(9) .left span{
+   font-size: 12px;
+}
+
+
+
+/* *******************搭配***************** */
+#main .banner-fix{
+    height: 120px;
+    margin: 42px 0;
+}
+#main .banner-fix img{
+    max-width: 100%;
+}
+
+#main .fix{
+    width: 1224px;
+    height: 685px;
+}
+#main .fix .title{
+    width: 1224px;
+    height: 57px;
+}
+#main .fix .title span{
+    float: left;
+    font-size: 21px;
+    line-height: 57px;
+    color: #333;
+}
+#main .fix .fix-nav{
+    float: right;
+}
+#main .fix .fix-nav li{
+    cursor: pointer;
+    float: left;
+    padding-bottom: 2px;
+    margin: 4px 15px;
+    font-size: 14px;
+    color: #333;
+    transition: border 0.3s;
+}
+#main .fix .fix-nav li:hover{
+    border-bottom: 2px solid #ff6700;
+    color: #ff6700;
+
+}
+#main .fix .fix-nav li:last-child{
+    margin-right: 0;
+}
+
+/* fix-con */
+
+/* left */
+
+#main .fix .buttom .left{
+    width: 234px;
+    height: 614px;
+    float: left;
+}
+#main .fix .buttom .left img{
+    width: 234px;
+    height: 300px;
+}
+#main .fix .buttom .left .fix-con{
+    margin-left: 0;
+}
+
+/* right */
+#main .fix .buttom .right{
+    width: 990px;
+    height: 614px;
+    float: right;
+}
+
+#main .fix .fix-con{
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 234px;
+    height: 300px;
+    background: #fff;
+    float: left;
+    margin-top: 14px;
+    margin-left: 13px;
+    transition: top 0.3s; 
+}
+#main .fix .buttom .right .phone-con:nth-child(5){
+    margin-top: 14px;
+ }
+ #main .fix .buttom .right .phone-con:nth-child(6){
+     margin-top: 14px;
+  }
+  #main .fix .buttom .right .phone-con:nth-child(7){
+     margin-top: 14px;
+  }
+  #main .fix .buttom .right .phone-con:nth-child(8){
+     margin-top: 14px;
+  }
+ #main .fix .buttom .right .fix-con .tip{
+     display: block;
+     margin: 0 auto;
+     font-size: 12px;
+     text-align: center;
+     line-height: 20px;
+     color: #fff;
+     width: 64px;
+     height: 20px;
+     background: #83c44e;
+ }
+ #main .fix .buttom .right .fix-con img{
+     width: 160px;
+     height: 165px;
+ }
+ #main .fix .buttom .right .fix-con .phoneName{
+     font-size: 12px;
+     line-height: 12px;
+     margin-top: 14px;
+     margin-bottom: 9px;
+ }
+ #main .fix .buttom .right .fix-con .intro{
+     font-size: 12px;
+     color: #b0b0b0;
+     line-height: 12px;
+     margin-bottom: 18px;
+ }
+ #main .fix .buttom .right .fix-con .price span:first-child{
+     color: #ff6700;
+     font-size: 12px;
+     line-height: 12px;
+ }
+ #main .fix .buttom .fix-con:hover{
+     top: -2px;
+     
+     box-shadow: 0px 2px 20px #ccc;
+ }
+ #main .fix .buttom .right .fix-con .hover{
+     position: relative;
+     top: 26px;
+     padding: 10px;
+     width: 214px;
+     height: 125px;
+     background: #ff6700;
+ }
+ #main .fix .buttom .right .fix-con .hover p{
+     font-size: 12px;
+     color: #fff;
+ }
+#main .fix .buttom .right .fix-con .hover span{
+    font-size: 12px;
+    color: rgb(236, 231, 231);
+ }
+ #main .fix .buttom .fix-con:hover .hover{
+     transition: top 0.2s;
+     top: -55px;
+ }
+ #main .fix .buttom .right .fix-con:nth-child(8){
+     width: 234px;
+     height: 143px;
+     text-align: left;
+ }
+ #main .fix .buttom .right .fix-con:nth-child(8) .left{
+     width: 70px;
+     height: 143px;
+     padding-left: 30px;
+     float: left;
+ }
+ #main .fix .buttom .right .fix-con:nth-child(8) .right img{
+     width: 100px;
+     height: 100px;
+     margin-top: 20px;
+ }
+ #main .fix .buttom .right .fix-con:nth-child(8) .right{
+    width: 100px;
+    height: 143px;
+    margin-right: 10px;
+    float: right;
+}
+#main .fix .buttom .right .fix-con:nth-child(8) .left p{
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 10px;
+    margin-top: 32px;
+    color: #333;
+}
+#main .fix .buttom .right .fix-con:nth-child(8) .left span{
+    color: #ff6700;
+    font-size: 14px;
+}
+
+
+/* more */
+ #main .fix .buttom .right .fix-con:nth-child(9){
+    width: 234px;
+    height: 143px;
+    text-align: left;
+}
+#main .fix .buttom .right .fix-con:nth-child(9) .left{
+    width: 70px;
+    height: 143px;
+    padding-left: 30px;
+    float: left;
+}
+
+#main .fix .buttom .right .fix-con:nth-child(9) .right{
+   width: 100px;
+   height: 143px;
+   margin-right: 10px;
+   text-align: center;
+   line-height: 143px;
+   float: right;
+}
+#main .fix .buttom .right .fix-con:nth-child(9) .right i{
+    font-size: 50px;
+    color: #ff6700;
+}
+#main .fix .buttom .right .fix-con:nth-child(9) .left p{
+   font-size: 16px;
+   line-height: 14px;
+   margin-bottom: 5px;
+   margin-top: 50px;
+   color: #333;
+}
+#main .fix .buttom .right .fix-con:nth-child(9) .left span{
+   font-size: 12px;
+}
+
+/* ***********************配件************** */
+#main .banner-parts{
+    height: 120px;
+    margin: 42px 0;
+}
+#main .banner-parts img{
+    max-width: 100%;
+}
+
+#main .parts{
+    width: 1224px;
+    height: 685px;
+}
+#main .parts .title{
+    width: 1224px;
+    height: 57px;
+}
+#main .parts .title span{
+    float: left;
+    font-size: 21px;
+    line-height: 57px;
+    color: #333;
+}
+#main .parts .parts-nav{
+    float: right;
+}
+#main .parts .parts-nav li{
+    cursor: pointer;
+    float: left;
+    padding-bottom: 2px;
+    margin: 4px 15px;
+    font-size: 14px;
+    color: #333;
+    transition: border 0.3s;
+}
+#main .parts .parts-nav li:hover{
+    border-bottom: 2px solid #ff6700;
+    color: #ff6700;
+
+}
+#main .parts .parts-nav li:last-child{
+    margin-right: 0;
+}
+
+/* parts-con */
+
+/* left */
+
+#main .parts .buttom .left{
+    width: 234px;
+    height: 614px;
+    float: left;
+}
+#main .parts .buttom .left img{
+    width: 234px;
+    height: 300px;
+}
+#main .parts .buttom .parts .parts-con{
+    margin-left: 0;
+}
+
+/* right */
+#main .parts .buttom .right{
+    width: 990px;
+    height: 614px;
+    float: right;
+}
+
+#main .parts .parts-con{
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 234px;
+    height: 300px;
+    background: #fff;
+    float: left;
+    margin-top: 14px;
+    margin-left: 13px;
+    transition: top 0.3s; 
+}
+#main .parts .buttom .right .phone-con:nth-child(5){
+    margin-top: 14px;
+ }
+ #main .parts .buttom .right .phone-con:nth-child(6){
+     margin-top: 14px;
+  }
+  #main .parts .buttom .right .phone-con:nth-child(7){
+     margin-top: 14px;
+  }
+  #main .parts .buttom .right .phone-con:nth-child(8){
+     margin-top: 14px;
+  }
+ #main .parts .buttom .right .parts-con .tip{
+     display: block;
+     margin: 0 auto;
+     font-size: 12px;
+     text-align: center;
+     line-height: 20px;
+     color: #fff;
+     width: 64px;
+     height: 20px;
+     background: #83c44e;
+ }
+ #main .parts .buttom .right .parts-con img{
+     width: 160px;
+     height: 165px;
+ }
+ #main .parts .buttom .right .parts-con .phoneName{
+     font-size: 12px;
+     line-height: 12px;
+     margin-top: 14px;
+     margin-bottom: 9px;
+ }
+ #main .parts .buttom .right .parts-con .intro{
+     font-size: 12px;
+     color: #b0b0b0;
+     line-height: 12px;
+     margin-bottom: 18px;
+ }
+ #main .parts .buttom .right .parts-con .price span:first-child{
+     color: #ff6700;
+     font-size: 12px;
+     line-height: 12px;
+ }
+ #main .parts .buttom .parts-con:hover{
+     top: -2px;
+     
+     box-shadow: 0px 2px 20px #ccc;
+ }
+ #main .parts .buttom .right .parts-con .hover{
+     position: relative;
+     top: 26px;
+     padding: 10px;
+     width: 214px;
+     height: 125px;
+     background: #ff6700;
+ }
+ #main .parts .buttom .right .parts-con .hover p{
+     font-size: 12px;
+     color: #fff;
+ }
+#main .parts .buttom .right .parts-con .hover span{
+    font-size: 12px;
+    color: rgb(236, 231, 231);
+ }
+ #main .parts .buttom .parts-con:hover .hover{
+     transition: top 0.2s;
+     top: -55px;
+ }
+ #main .parts .buttom .right .parts-con:nth-child(8){
+     width: 234px;
+     height: 143px;
+     text-align: left;
+ }
+ #main .parts .buttom .right .parts-con:nth-child(8) .left{
+     width: 70px;
+     height: 143px;
+     padding-left: 30px;
+     float: left;
+ }
+ #main .parts .buttom .right .parts-con:nth-child(8) .right img{
+     width: 100px;
+     height: 100px;
+     margin-top: 20px;
+ }
+ #main .parts .buttom .right .parts-con:nth-child(8) .right{
+    width: 100px;
+    height: 143px;
+    margin-right: 10px;
+    float: right;
+}
+#main .parts .buttom .right .parts-con:nth-child(8) .left p{
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 10px;
+    margin-top: 32px;
+    color: #333;
+}
+#main .parts .buttom .right .parts-con:nth-child(8) .left span{
+    color: #ff6700;
+    font-size: 14px;
+}
+
+
+/* more */
+#main .parts .buttom .right .parts-con:nth-child(9){
+    width: 234px;
+    height: 143px;
+    text-align: left;
+}
+#main .parts .buttom .right .parts-con:nth-child(9) .left{
+    width: 70px;
+    height: 143px;
+    padding-left: 30px;
+    float: left;
+}
+
+#main .parts .buttom .right .parts-con:nth-child(9) .right{
+   width: 100px;
+   height: 143px;
+   margin-right: 10px;
+   text-align: center;
+   line-height: 143px;
+   float: right;
+}
+#main .parts .buttom .right .parts-con:nth-child(9) .right i{
+    font-size: 50px;
+    color: #ff6700;
+}
+#main .parts .buttom .right .parts-con:nth-child(9) .left p{
+   font-size: 16px;
+   line-height: 14px;
+   margin-bottom: 5px;
+   margin-top: 50px;
+   color: #333;
+}
+#main .parts .buttom .right .parts-con:nth-child(9) .left span{
+   font-size: 12px;
+}
+
+
+/* **************周边************* */
+#main .banner-around{
+    height: 120px;
+    margin: 42px 0;
+}
+#main .banner-around img{
+    max-width: 100%;
+}
+
+#main .around{
+    width: 1224px;
+    height: 685px;
+}
+#main .around .title{
+    width: 1224px;
+    height: 57px;
+}
+#main .around .title span{
+    float: left;
+    font-size: 21px;
+    line-height: 57px;
+    color: #333;
+}
+#main .around .around-nav{
+    float: right;
+}
+#main .around .around-nav li{
+    cursor: pointer;
+    float: left;
+    padding-bottom: 2px;
+    margin: 4px 15px;
+    font-size: 14px;
+    color: #333;
+    transition: border 0.3s;
+}
+#main .around .around-nav li:hover{
+    border-bottom: 2px solid #ff6700;
+    color: #ff6700;
+
+}
+#main .around .around-nav li:last-child{
+    margin-right: 0;
+}
+
+/* around-con */
+
+/* left */
+
+#main .around .buttom .left{
+    width: 234px;
+    height: 614px;
+    float: left;
+}
+#main .around .buttom .left img{
+    width: 234px;
+    height: 300px;
+}
+#main .around .buttom .left .around-con{
+    margin-left: 0;
+}
+
+/* right */
+#main .around .buttom .right{
+    width: 990px;
+    height: 614px;
+    float: right;
+}
+
+#main .around .around-con{
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 234px;
+    height: 300px;
+    background: #fff;
+    float: left;
+    margin-top: 14px;
+    margin-left: 13px;
+    transition: top 0.3s; 
+}
+#main .around .buttom .right .phone-con:nth-child(5){
+    margin-top: 14px;
+ }
+ #main .around .buttom .right .phone-con:nth-child(6){
+     margin-top: 14px;
+  }
+  #main .around .buttom .right .phone-con:nth-child(7){
+     margin-top: 14px;
+  }
+  #main .around .buttom .right .phone-con:nth-child(8){
+     margin-top: 14px;
+  }
+ #main .around .buttom .right .around-con .tip{
+     display: block;
+     margin: 0 auto;
+     font-size: 12px;
+     text-align: center;
+     line-height: 20px;
+     color: #fff;
+     width: 64px;
+     height: 20px;
+     background: #83c44e;
+ }
+ #main .around .buttom .right .around-con img{
+     width: 160px;
+     height: 165px;
+ }
+ #main .around .buttom .right .around-con .phoneName{
+     font-size: 12px;
+     line-height: 12px;
+     margin-top: 14px;
+     margin-bottom: 9px;
+ }
+ #main .around .buttom .right .around-con .intro{
+     font-size: 12px;
+     color: #b0b0b0;
+     line-height: 12px;
+     margin-bottom: 18px;
+ }
+ #main .around .buttom .right .around-con .price span:first-child{
+     color: #ff6700;
+     font-size: 12px;
+     line-height: 12px;
+ }
+ #main .around .buttom .around-con:hover{
+     top: -2px;
+     box-shadow: 0px 2px 20px #ccc;
+ }
+ #main .around .buttom .right .around-con .hover{
+     position: relative;
+     top: 26px;
+     padding: 10px;
+     width: 214px;
+     height: 125px;
+     background: #ff6700;
+ }
+ #main .around .buttom .right .around-con .hover p{
+     font-size: 12px;
+     color: #fff;
+ }
+#main .around .buttom .right .around-con .hover span{
+    font-size: 12px;
+    color: rgb(236, 231, 231);
+ }
+ #main .around .buttom .around-con:hover .hover{
+     transition: top 0.2s;
+     top: -55px;
+ }
+ #main .around .buttom .right .around-con:nth-child(8){
+     width: 234px;
+     height: 143px;
+     text-align: left;
+ }
+ #main .around .buttom .right .around-con:nth-child(8) .left{
+     width: 70px;
+     height: 143px;
+     padding-left: 30px;
+     float: left;
+ }
+ #main .around .buttom .right .around-con:nth-child(8) .right img{
+     width: 100px;
+     height: 100px;
+     margin-top: 20px;
+ }
+ #main .around .buttom .right .around-con:nth-child(8) .right{
+    width: 100px;
+    height: 143px;
+    margin-right: 10px;
+    float: right;
+}
+#main .around .buttom .right .around-con:nth-child(8) .left p{
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 10px;
+    margin-top: 32px;
+    color: #333;
+}
+#main .around .buttom .right .around-con:nth-child(8) .left span{
+    color: #ff6700;
+    font-size: 14px;
+}
+
+
+/* more */
+#main .around .buttom .right .around-con:nth-child(9){
+    width: 234px;
+    height: 143px;
+    text-align: left;
+}
+#main .around .buttom .right .around-con:nth-child(9) .left{
+    width: 70px;
+    height: 143px;
+    padding-left: 30px;
+    float: left;
+}
+
+#main .around .buttom .right .around-con:nth-child(9) .right{
+   width: 100px;
+   height: 143px;
+   margin-right: 10px;
+   text-align: center;
+   line-height: 143px;
+   float: right;
+}
+#main .around .buttom .right .around-con:nth-child(9) .right i{
+    font-size: 50px;
+    color: #ff6700;
+}
+#main .around .buttom .right .around-con:nth-child(9) .left p{
+   font-size: 16px;
+   line-height: 14px;
+   margin-bottom: 5px;
+   margin-top: 50px;
+   color: #333;
+}
+#main .around .buttom .right .around-con:nth-child(9) .left span{
+   font-size: 12px;
+}
+
+
+/* *******************为你推荐**************** */
+
+#main .recommend{
+    width: 1224px;
+    height: 372px;
+}
+#main .recommend .top{
+    margin-top: 42px;
+    width: 1224px;
+    height: 57px;
+}
+#main .recommend .top .title{
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 58px;
+    color: #333;
+}
+#main .recommend .top .btn{
+    position: relative;
+    float: right;
+}
+#main .recommend .top .btn i{
+    line-height: 22px;
+    float: left;
+    text-align: center;
+    border: 1px solid #ccc;
+    width: 34px;
+    height: 22px;
+    margin-top: 20px;
+}
+#main .recommend .top .btn i:first-child{
+    border-right: 0;
+}
+
+#main .recommend .buttom .recommend-con{
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 234px;
+    height: 300px;
+    background: #fff;
+    float: left;
+    margin-top: 14px;
+    margin-left: 13px;
+    transition: top 0.3s; 
+}
+#main .recommend .buttom .recommend-con .tip{
+    display: block;
+    margin: 0 auto;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    width: 64px;
+    height: 20px;
+    background: #83c44e;
+}
+#main .recommend .buttom .recommend-con img{
+    width: 160px;
+    height: 165px;
+}
+#main .recommend .buttom .recommend-con .phoneName{
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: 14px;
+    margin-bottom: 9px;
+}
+#main .recommend .buttom .recommend-con .intro{
+    font-size: 12px;
+    color: #b0b0b0;
+    line-height: 12px;
+    margin-top: 10px;
+}
+#main .recommend .buttom .recommend-con .price span:first-child{
+    color: #ff6700;
+    font-size: 12px;
+    line-height: 12px;
+}
+#main .recommend .buttom .recommend-con:hover{
+    top: -2px;
+    box-shadow: 0px 2px 20px #ccc;
+}
+#main .recommend .buttom .recommend-con:first-child{
+    margin-left: 0;
+}
+
+
+/* 热评产品 */
+#main .hot-evaluate{
+    width: 1224px;
+    margin-top: 42px;
+    height: 500px;
+}
+#main .hot-evaluate .top .title{
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 58px;
+    color: #333;
+}
+#main .hot-evaluate .buttom .hot-con{
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    transition: top 0.5s;
+    width: 296px;
+    height: 415px;
+    float: left;
+    margin-left: 13px;
+    background: #fff;
+}
+#main .hot-evaluate .buttom .hot-con:first-child{
+    margin-left: 0;
+}
+#main .hot-evaluate .buttom .hot-con img{
+    width: 296px;
+    height: 220px;
+}
+#main .hot-evaluate .buttom .hot-con .evaluate{
+    margin: 28px 42px 30px 42px;
+    font-size: 12px;
+    color: #333;
+    line-height: 24px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:3;
+    overflow: hidden;
+}
+#main .hot-evaluate .buttom .hot-con .intro{
+    margin: 0 42px;
+    font-size: 12px;
+    line-height: 12px;
+    color: #b0b0b0;
+    margin-bottom: 16px;
+}
+#main .hot-evaluate .buttom .hot-con p .name{
+    font-size: 12px;
+    color: #333;
+    line-height: 24px;
+}
+#main .hot-evaluate .buttom .hot-con p .shu{
+    color: #b0b0b0;
+    font-size: 12px;
+}
+#main .hot-evaluate .buttom .hot-con p .price{
+    font-size: 12px;
+    color: #ff6700;
+    line-height: 14px;
+}
+#main .hot-evaluate .buttom .hot-con span+p{
+    margin-left: 42px;
+}
+#main .hot-evaluate .buttom .hot-con:hover{
+    top: -2px;
+    box-shadow: 2px 2px 40px #ccc;
 }
