@@ -1645,7 +1645,8 @@
 #main .hot-evaluate{
     width: 1224px;
     margin-top: 42px;
-    height: 500px;
+    height: 473px;
+    margin-bottom: 22px;
 }
 #main .hot-evaluate .top .title{
     font-size: 22px;
@@ -1708,4 +1709,313 @@
 #main .hot-evaluate .buttom .hot-con:hover{
     top: -2px;
     box-shadow: 2px 2px 40px #ccc;
+}
+
+
+/* ******************内容************** */
+
+#main .content{
+    width: 1224px;
+    height: 485px;
+}
+#main .content .top .title{
+    width: 1224px;
+    height: 57px;
+    float: left;
+    font-size: 21px;
+    line-height: 57px;
+    color: #333;
+}
+#main .content .buttom .content-con{
+    cursor: pointer;
+    position: relative;
+    transition: all 0.5s;
+    top: 0;
+    padding-top: 49px;
+    padding-left: 35px;
+    padding-right: 35px;
+    text-align: center;
+    width: 226px;
+    height: 380px;
+    background: #fff;
+    float: left;
+    margin-left: 13px;
+}
+#main .content .buttom .content-con:hover{
+    top: -2px;
+    box-shadow: 2px 2px 40px #ccc;
+}
+
+/* 图书 */
+#main .content .buttom .content-con:first-child{
+    margin-left: 0;
+    border-top: 1px solid #ffbd42;
+}
+
+
+#main .content .buttom .content-con .title{
+    font-size: 14px;
+    line-height: 14px;
+    color: #ffbd42;
+}   
+#main .content .buttom .content-con li .name{
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 25px; 
+    color: #333;
+}
+#main .content .buttom .content-con li .intro{
+    font-size: 14px;
+    color: #b0b0b0;
+    line-height: 20px;
+    margin-top: 9px;
+    margin-bottom: 15px;
+}
+#main .content .buttom .content-con li .price{
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 20px;
+    color: #333;
+}
+#main .content .buttom .content-con li img{
+    width: 216px;
+    height: 154px;
+}
+#main .content .buttom .content-con .item{
+    width: 226px;
+    height: 340px;
+}
+#main .content .buttom .content-con ol{
+    position: absolute;
+    left: 100px;
+    bottom: 10px;
+}
+#main .content .buttom .content-con ol li{
+    transition: all 0.4s;
+    cursor: pointer;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin: 0 10px;
+    background: #b0b0b0;
+}
+#main .content .buttom .content-con ol li.bot{
+    border: 1px solid #ff6700;
+    background: #fff;
+}
+#main .content .buttom .content-con ol .bot~li:hover{
+    background: #ff6700;
+}
+
+
+/* MIUI主题 */
+#main .content .buttom .content-con:nth-child(2){
+    border-top: 1px solid #83c44e;
+}
+#main .content .buttom .content-con:nth-child(2) .title{
+    font-size: 14px;
+    line-height: 14px;
+    color: #83c44e;
+}   
+#main .content .buttom .content-con:nth-child(2) li .name{
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 25px; 
+    color: #333;
+}
+#main .content .buttom .content-con:nth-child(2) li .intro{
+    font-size: 14px;
+    color: #b0b0b0;
+    line-height: 20px;
+    margin-top: 9px;
+    margin-bottom: 15px;
+}
+#main .content .buttom .content-con:nth-child(2) li .price{
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 20px;
+    color: #333;
+}
+#main .content .buttom .content-con:nth-child(2) li img{
+    width: 216px;
+    height: 154px;
+}
+#main .content .buttom .content-con:nth-child(2) .item{
+    width: 226px;
+    height: 340px;
+}
+#main .content .buttom .content-con:nth-child(2) ol{
+    position: absolute;
+    left: 100px;
+    bottom: 10px;
+}
+#main .content .buttom .content-con:nth-child(2) ol li{
+    transition: all 0.4s;
+    cursor: pointer;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin: 0 10px;
+    background: #b0b0b0;
+}
+#main .content .buttom .content-con:nth-child(2) ol li.bot{
+    border: 1px solid #ff6700;
+    background: #fff;
+}
+#main .content .buttom .content-con:nth-child(2) ol .bot~li:hover{
+    background: #ff6700;
+}
+
+
+/* 游戏 */
+#main .content .buttom .content-con:nth-child(3){
+    border-top: 1px solid #ea605d;
+}
+#main .content .buttom .content-con:nth-child(3) .title{
+    font-size: 14px;
+    line-height: 14px;
+    color: #ea605d;
+}   
+#main .content .buttom .content-con:nth-child(3) li .name{
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 25px; 
+    color: #333;
+}
+#main .content .buttom .content-con:nth-child(3) li .intro{
+    font-size: 14px;
+    color: #b0b0b0;
+    line-height: 20px;
+    margin-top: 9px;
+    margin-bottom: 15px;
+}
+#main .content .buttom .content-con:nth-child(3) li .price{
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 20px;
+    color: #333;
+}
+#main .content .buttom .content-con:nth-child(3) li img{
+    width: 216px;
+    height: 154px;
+}
+#main .content .buttom .content-con:nth-child(3) .item{
+    width: 226px;
+    height: 340px;
+}
+#main .content .buttom .content-con:nth-child(3) ol{
+    position: absolute;
+    left: 100px;
+    bottom: 10px;
+}
+#main .content .buttom .content-con:nth-child(3) ol li{
+    transition: all 0.4s;
+    cursor: pointer;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin: 0 10px;
+    background: #b0b0b0;
+}
+#main .content .buttom .content-con:nth-child(3) ol li.bot{
+    border: 1px solid #ff6700;
+    background: #fff;
+}
+#main .content .buttom .content-con:nth-child(3) ol .bot~li:hover{
+    background: #ff6700;
+}
+/* =================btn_left,,,btn_right============== */
+#main .content .buttom .content-con .btn_left{
+    position: absolute;
+    display: none;
+    width: 20px;
+    height: 48px;
+    background: red;
+    left: 0;
+    top: 50%;
+    margin-top: -24px;
+    background: url(../images/index-img/btn-icon.png) no-repeat -43px 100%;
+    background-size: 85px 48px;
+}
+#main .content .buttom .content-con .btn_right{
+    position: absolute;
+    display: none;
+    width: 20px;
+    height: 48px;
+    background: red;
+    right: 0;
+    top: 50%;
+    margin-top: -24px;
+    background: url(../images/index-img/btn-icon.png) no-repeat -64px 100%;
+    background-size: 85px 48px;
+}
+#main .content .buttom .content-con:hover .btn_left{
+    display: block;
+}
+#main .content .buttom .content-con:hover .btn_right{
+    display: block;
+}
+#main .content .buttom .content-con .btn_left:hover{
+    background: url(../images/index-img/btn-icon.png) no-repeat 0 100%;
+    background-size: 85px 48px;
+}
+#main .content .buttom .content-con .btn_right:hover{
+    background: url(../images/index-img/btn-icon.png) no-repeat -22px 100%;
+    background-size: 85px 48px;
+}
+
+
+/* ************视频*********** */
+
+
+#main .video{
+    width: 1224px;
+    height: 342px;
+    margin-bottom: 60px;
+    margin-top: 22px;
+}
+#main .video .top .title{
+    width: 1224px;
+    height: 57px;
+    float: left;
+    font-size: 21px;
+    line-height: 57px;
+    color: #333;
+}
+#main .video .buttom .video-con{
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    transition: all 0.5s;
+    text-align: center;
+    width: 296px;
+    height: 285px;
+    background: #fff;
+    float: left;
+    margin-left: 13px;
+}
+#main .video .buttom .video-con:hover{
+    top: -2px;
+    box-shadow: 2px 2px 40px #ccc;
+}
+#main .video .buttom .video-con:first-child{
+    margin-left: 0;
+}
+#main .video .buttom .video-con img{
+    width: 296px;
+    height: 180px;
+}
+#main .video .buttom .video-con .name{
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 32px;
+    margin-bottom: 13px;
+}
+#main .video .buttom .video-con .intro{
+    font-size: 12px;
+    color: #b0b0b0;
+    line-height: 12px;
 }
