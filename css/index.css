@@ -1160,7 +1160,7 @@
     width: 234px;
     height: 300px;
 }
-#main .parts .buttom .parts .parts-con{
+#main .parts .buttom .left .parts-con{
     margin-left: 0;
 }
 
@@ -1209,6 +1209,7 @@
      height: 20px;
      background: #83c44e;
  }
+
  #main .parts .buttom .right .parts-con img{
      width: 160px;
      height: 165px;
