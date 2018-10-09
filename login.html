@@ -8,6 +8,7 @@
     <title>小米账号-登录</title>
 </head>
 <body>
+    
     <div id="header">
         <h1><img src="images/login-img/xiaomi-logo.png" alt=""></h1>
     </div>
@@ -19,10 +20,10 @@
                     <span>扫码登录</span>
                 </div>
                 <!-- 账号登录 -->
-                <form action="" class="loginUserName">
+                <form action="" method="POST" class="loginUserName">
                     <input type="text" class="username" placeholder="邮箱/手机号码/小米ID">
-                    <input type="text" class="password" placeholder="密码">
-                    <button>登录</button>
+                    <input type="password" class="password" placeholder="密码">
+                    <button class="login-btn" type="submit">登录</button>
                     <a href="#" class="loginTel">手机短信登录/注册</a>
                     <p>
                         <a href="#">立即注册</a>
@@ -57,5 +58,12 @@
             <p>小米公司版权所有-京ICP备10046444-<a href="#"><img src="images/login-img/ghs.png" alt="">京公网安备11010802020134号</a>-京ICP证110507号</p>
         </ul>
     </div>
+    <script src="js/ajax.js"></script>
+    <script src="js/login.js"></script>
+    <script>
+        
+        login.init(".loginUserName");
+    
+    </script>
 </body>
 </html>

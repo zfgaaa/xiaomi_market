@@ -87,24 +87,28 @@ i{
     color: #fff;
 }
 
-#header .header-con ol i{
-    position: absolute;
-    right: 0;
+#header .header-con ol p{
+    font-weight: 600;
+    color: #b0b0b0;
+    line-height: 40px;
     display: block;
+    float: right;
+    text-align: center;
     width: 120px;
     height: 40px;
-    color: #b0b0b0;
     background: #424242;
 }
-#header .header-con ol i img{
-    margin: 10px 10px 0 10px;
-    width: 20px;
-    height:20px;
+#header .header-con ol p i{
+    font-size: 14px;
+    vertical-align: -2px;
+    color: 
 }
-#header .header-con ol i span{
-    position: absolute;
+#header .header-con ol p:hover{
+    background: #fff;
+    color: #ff6700;
 }
-#header .shopCarHide{
+
+#header .header-con .shopCarHide{
     display: none;
     position: absolute;
     right:0;
@@ -142,7 +146,6 @@ i{
     margin-top: 22px;
     float: left;
 }
-
 /* nav */
 #header-nav .headerNavCon  ul{
     margin-left: 56px;
