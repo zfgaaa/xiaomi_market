@@ -9,13 +9,16 @@ h1,h2,h3,h4,h5,h6{
 ul,li{
     list-style: none;
 }
+a{
+    text-decoration: none;
+}
 body{
     background-color: #f9f9f9;
 }
 #main{
     width: 854px;
     height: 548px;
-    margin: 153px auto;
+    margin: 61px auto;
     background: #fff;
 }
 #main h1{
@@ -227,4 +230,31 @@ body{
     color: #333;
     font-weight: 900;
     text-decoration: none;
+}
+
+/* footer */
+#footer{
+    text-align: center;
+}
+#footer ul{
+    width: 854px;
+    margin: 0 auto;
+    text-align: center;
+}
+#footer .footer-nav li{
+    font-size: 14px;
+    color: #757575;
+    display: inline-block;
+}
+#footer .footer-nav li a{
+    color: #757575;
+    font-size: 14px;
+}
+#footer p{
+    font-size: 14px;
+    color: #9d9d9d;
+    margin-top: 15px;
+}
+#footer p a{
+    color: #9d9d9d;
 }
