@@ -15,44 +15,22 @@
         <h3 class="register-title">注册小米账号</h3>
         <div class="register-table">
             <div class="regbox">
-                <h4 class="country">国家/地区</h4>
-                <div class="countryInput">
-                    <p class="result-select">中国</p>
-                    <span><i class="iconfont icon-xiala"></i></span>
-                </div>
-                <ul class="countryList">
-                    <input type="text">
-                    <li>中国</li>
-                    <li>中国台湾</li>
-                    <li>中国香港</li>
-                    <li>Brazil</li>
-                    <li>India</li>
-                    <li>Indonesia</li>
-                    <li>Malaysia</li>
-                </ul>
-                <div class="country-text">成功注册帐号后，国家/地区将不能被修改</div>
-                <h4 class="phoneNum">手机号码</h4>
-                <div class="phoneNumInput">
-                    <div class="phonewrap">
-                        <p>+86</p>
-                        <i class="icon_arrow"></i>
+                <form action="" method="POST">
+                    <div class="name">
+                        <h4 class="titlel">用户名</h4>
+                        <input type="text" name="username" class="usernameInp">
+                        <p class="format-error">用户名格式错误</p>
+                        <p class="userNull">用户名不能为空</p>
                     </div>
-                    <input type="text" class="inpNum" placeholder="请输入手机号码">
-                    <ul class="phoneList">
-                            <input type="text">
-                            <li>中国</li>
-                            <li>中国台湾</li>
-                            <li>中国香港</li>
-                            <li>Brazil</li>
-                            <li>India</li>
-                            <li>Indonesia</li>
-                            <li>Malaysia</li>
-                        </ul>
-                    <p class="prompt">
-                        <i class="iconfont icon-gantanhao"></i>请输入手机号码
-                    </p>
-                </div>
-                <button type="submit">立即注册</button>
+                    <div class="pass">
+                        <h4 class="title">密码</h4>
+                        <input type="password" name="password" class="password">
+                        <p class="pass-nosafe">密码安全度低</p>
+                        <p class="passNull">密码不能为空</p>
+                    </div>
+                    <button type="submit" class="register-btn">立即注册</button>
+
+                </form>
             </div>
             <p class="tip">
                 <span class="tip-con">
@@ -71,5 +49,11 @@
         </ul>
         <p>小米公司版权所有-京ICP备10046444-<a href="#"><img src="images/login-img/ghs.png" alt="">京公网安备11010802020134号</a>-京ICP证110507号</p>
     </div>
+
+    <script src="js/ajax.js"></script>
+    <script src="js/register.js"></script>
+    <script>
+        register.init(".register-table");
+    </script>
 </body>
 </html>

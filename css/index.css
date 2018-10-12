@@ -14,40 +14,42 @@
     width: 1224px;
     height: 460px;
     margin: 0 auto;
+    overflow: hidden;
 }
-#banner .banner-con img{
-    max-width: 100%;
+
+/* 轮播图 */
+#banner .banner-con .banner-swiper{
+    width: 1224px;
+    height: 460px;
 }
-#banner .banner-con ul{
-    padding: 20px 0;
-    position: absolute;
-    top: 0;
-    left: 1px;
-    background-color: rgba(51,51,51,0.5);
-    width: 235px;
-    height: 420px;
-}
-#banner .banner-con ul li{
-    padding-left: 30px;
-    padding-right: 24px;
-    width: 181px;
-    height: 42px;
-    line-height: 42px;
-}
-#banner .banner-con ul li:hover{
-    background: orange;
-}
-#banner .banner-con ul li a span:first-child{
+#banner .banner-con .banner-swiper .swiper-slide{
+    width: 1224px;
+    height: 460px;
     float: left;
 }
-#banner .banner-con ul li a span:last-child{
-    float: right;
+#banner .banner-con .banner-swiper .swiper-slide:nth-child(1){
+    background: url(../images/index-img/banner-swiper.jpg) no-repeat center;
+    background-size: cover;
 }
-#banner .banner-con ul li a{
-    font-size: 14px;
-    color: #fff;
+#banner .banner-con .banner-swiper .swiper-slide:nth-child(2){
+    background: url(../images/index-img/banner.jpg) no-repeat center;
+    background-size: cover;
+}
+#banner .banner-con .banner-swiper .swiper-slide:nth-child(3){
+    background: url(../images/index-img/banner-swiper1.jpg) no-repeat center;
+    background-size: cover;
+}
+#banner .banner-con .banner-swiper .swiper-slide:nth-child(4){
+    background: url(../images/index-img/banner-swiper3.jpg) no-repeat center; 
+    background-size: cover;
+}
+#banner .banner-con .banner-swiper .swiper-slide:nth-child(5){
+    background: url(../images/index-img/banner-swiper2.jpg) no-repeat center;
+    background-size: cover;
 }
 #banner .banner-con .btn-left{
+    position: relative;
+    z-index: 200;
     cursor: pointer;
     position: absolute;
     left: 236px;
@@ -56,8 +58,16 @@
     background: url(../images/index-img/btn-icon.png) no-repeat -84px 0;
     width: 41px;
     height: 69px;
+} 
+#banner .banner-con .btn-left:hover{
+    background: url(../images/index-img/btn-icon.png) no-repeat 0px 0;
+}
+#banner .banner-con .btn-right:hover{
+    background: url(../images/index-img/btn-icon.png) no-repeat -43px 0;
 }
 #banner .banner-con .btn-right{
+    position: relative;
+    z-index: 200;
     cursor: pointer;
     position: absolute;
     right: 0px;
@@ -68,7 +78,7 @@
     height: 69px;
 }
 #banner .banner-con ol{
-    position: absolute;
+    position: relative;
     bottom: 25px;
     right: 34px;
 }
@@ -88,6 +98,84 @@
     -webkit-transition: background .2s;
     transition: background .2s;
     background: #f38588;
+}
+
+
+/* 导航栏 */
+#banner .banner-con .nav{
+    position: relative;
+    z-index: 999;
+    padding: 20px 0;
+    position: absolute;
+    top: 0;
+    left: 1px;
+    background-color: rgba(51,51,51,0.5);
+    width: 235px;
+    height: 420px;
+}
+#banner .banner-con .nav li{
+    cursor: pointer;
+    padding-left: 30px;
+    padding-right: 24px;
+    width: 181px;
+    height: 42px;
+    line-height: 42px;
+}
+#banner .banner-con .nav li:hover{
+    background: orange;
+}
+#banner .banner-con .nav li a span:first-child{
+    float: left;
+}
+#banner .banner-con .nav li a span:last-child{
+    float: right;
+}
+#banner .banner-con .nav li a{
+    font-size: 14px;
+    color: #fff;
+}
+
+
+/* nav-swiper */
+#banner .banner-con .swiper-nav{
+    display: none;
+    position: absolute;
+    z-index: 999;
+    box-shadow: 2px 2px 10px #ccc;
+    top: 0;
+    left: 236px;
+    height: 455px;
+    background: #fff;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+#banner .banner-con .swiper-nav .nav-con1{
+    float: left;
+}
+#banner .banner-con .swiper-nav .nav-con{
+    cursor: pointer;
+    transition: all 0.5s;
+    width: 235px;
+    height: 65px;
+    line-height: 72px;
+    margin-bottom: 7px;
+    margin-right: 8px;
+}
+#banner .banner-con .swiper-nav img{
+    width: 40px;
+    height: 40px;
+}
+#banner .banner-con .swiper-nav span{
+    font-size: 14px;
+    height: 75px;
+    width: 235px;
+    vertical-align: 15px;
+}
+#banner .banner-con .swiper-nav .nav-con:hover{
+    color: #ff6700;
+}
+#banner .banner-con .swiperListHide{
+    display: block;
 }
 
 /* ***********listNav************* */
@@ -177,9 +265,29 @@
 }
 #mi-shop .mi-shop-con .top .btn i:first-child{
     border-right: 0;
+    color: #ccc;
 }
 #mi-shop .mi-shop-con .buttom{
     width: 1224px;
+    height: 389px;
+}
+
+#mi-shop .mi-shop-con .buttom .buttom-left{
+    width: 234px;
+    height: 389px;
+    float: left;
+}
+#mi-shop .mi-shop-con .buttom .buttom-right{
+    width: 976px;
+    height: 389px;
+    float: right;
+    overflow: hidden;
+}
+#mi-shop .mi-shop-con .buttom .buttom-right .right-con{
+    position: relative;
+    left: 0;
+    transition: all 1s;
+    width: 2470px;
     height: 389px;
 }
 #mi-shop .mi-shop-con .buttom-con{
@@ -247,6 +355,9 @@
 }
 #mi-shop .mi-shop-con .buttom-con1 .time span{
     font-size: 16px;
+}
+#mi-shop .mi-shop-con .buttom-con:nth-child(1){
+    margin-left: 0;
 }
 #mi-shop .mi-shop-con .buttom-con .top{
     display: block;
@@ -463,12 +574,16 @@
     cursor: pointer;
     float: left;
     padding-bottom: 2px;
-    margin: 4px 15px;
-    font-size: 14px;
+    padding: 4px 15px;
+    
     color: #333;
     transition: border 0.3s;
 }
-#main .ele .ele-nav li:hover{
+#main .ele .ele-nav li a{
+    line-height: 20px;
+    font-size: 14px;
+}
+#main .ele .ele-nav li:hover a{
     border-bottom: 2px solid #ff6700;
     color: #ff6700;
 
@@ -480,10 +595,14 @@
 /* ele-con */
 
 /* left */
-
+#main .ele .buttom {
+    position: relative;
+    width: 1224px;
+    height: 628px;
+}
 #main .ele .buttom .left{
     width: 234px;
-    height: 614px;
+    height: 628px;
     float: left;
 }
 #main .ele .buttom .left img{
@@ -496,9 +615,12 @@
 
 /* right */
 #main .ele .buttom .right{
+    position: absolute;
+    display: none;
+    left: 234px;
+    top: 0;
     width: 990px;
     height: 614px;
-    float: right;
 }
 
 #main .ele .ele-con{
@@ -594,12 +716,12 @@
      padding-left: 30px;
      float: left;
  }
- #main .ele .buttom .right .ele-con:nth-child(8) .right img{
+ #main .ele .buttom .right .ele-con:nth-child(8) .right_con img{
      width: 100px;
      height: 100px;
      margin-top: 20px;
  }
- #main .ele .buttom .right .ele-con:nth-child(8) .right{
+ #main .ele .buttom .right .ele-con:nth-child(8) .right_con{
     width: 100px;
     height: 143px;
     margin-right: 10px;
@@ -631,7 +753,7 @@
     float: left;
 }
 
-#main .ele .buttom .right .ele-con:nth-child(9) .right{
+#main .ele .buttom .right .ele-con:nth-child(9) .right_con{
    width: 100px;
    height: 143px;
    margin-right: 10px;
@@ -639,7 +761,7 @@
    line-height: 143px;
    float: right;
 }
-#main .ele .buttom .right .ele-con:nth-child(9) .right i{
+#main .ele .buttom .right .ele-con:nth-child(9) .right_con i{
     font-size: 50px;
     color: #ff6700;
 }
@@ -653,7 +775,10 @@
 #main .ele .buttom .right .ele-con:nth-child(9) .left span{
    font-size: 12px;
 }
-
+/* 隐藏right */
+#main .main-con .ele .buttom .eleHideRight{
+    display: block;
+}
 
 /* *************智能************** */
 
@@ -685,12 +810,14 @@
     cursor: pointer;
     float: left;
     padding-bottom: 2px;
-    margin: 4px 15px;
-    font-size: 14px;
+    padding: 4px 15px;
     color: #333;
     transition: border 0.3s;
 }
-#main .robot .robot-nav li:hover{
+#main .robot .robot-nav li a{
+    font-size: 14px;
+}
+#main .robot .robot-nav li:hover a{
     border-bottom: 2px solid #ff6700;
     color: #ff6700;
 
@@ -717,10 +844,17 @@
 }
 
 /* right */
+#main .robot .buttom {
+    position: relative;
+}
 #main .robot .buttom .right{
+    position: absolute;
+    top: 0;
+    left: 234px;
     width: 990px;
     height: 614px;
     float: right;
+    display: none;
 }
 
 #main .robot .robot-con{
@@ -818,12 +952,12 @@
      padding-left: 30px;
      float: left;
  }
- #main .robot .buttom .right .robot-con:nth-child(8) .right img{
+ #main .robot .buttom .right .robot-con:nth-child(8) .right_con img{
      width: 100px;
      height: 100px;
      margin-top: 20px;
  }
- #main .robot .buttom .right .robot-con:nth-child(8) .right{
+ #main .robot .buttom .right .robot-con:nth-child(8) .right_con{
     width: 100px;
     height: 143px;
     margin-right: 10px;
@@ -855,7 +989,7 @@
     float: left;
 }
 
-#main .robot .buttom .right .robot-con:nth-child(9) .right{
+#main .robot .buttom .right .robot-con:nth-child(9) .right_con{
    width: 100px;
    height: 143px;
    margin-right: 10px;
@@ -863,7 +997,7 @@
    line-height: 143px;
    float: right;
 }
-#main .robot .buttom .right .robot-con:nth-child(9) .right i{
+#main .robot .buttom .right .robot-con:nth-child(9) .right_con i{
     font-size: 50px;
     color: #ff6700;
 }
@@ -876,6 +1010,10 @@
 }
 #main .robot .buttom .right .robot-con:nth-child(9) .left span{
    font-size: 12px;
+}
+/* 隐藏显示right */
+#main .main-con .robot .buttom .robotHideRight{
+    display: block;
 }
 
 
@@ -910,12 +1048,14 @@
     cursor: pointer;
     float: left;
     padding-bottom: 2px;
-    margin: 4px 15px;
-    font-size: 14px;
-    color: #333;
+    padding: 4px 15px;
     transition: border 0.3s;
 }
-#main .fix .fix-nav li:hover{
+#main .fix .fix-nav li a{
+    color: #333;
+    font-size: 14px;
+}
+#main .fix .fix-nav li:hover a{
     border-bottom: 2px solid #ff6700;
     color: #ff6700;
 
@@ -942,7 +1082,14 @@
 }
 
 /* right */
+#main .fix .buttom {
+    position: relative;
+}
 #main .fix .buttom .right{
+    position: absolute;
+    top: 0;
+    left: 234px;
+    display: none;
     width: 990px;
     height: 614px;
     float: right;
@@ -1043,12 +1190,12 @@
      padding-left: 30px;
      float: left;
  }
- #main .fix .buttom .right .fix-con:nth-child(8) .right img{
+ #main .fix .buttom .right .fix-con:nth-child(8) .right_con img{
      width: 100px;
      height: 100px;
      margin-top: 20px;
  }
- #main .fix .buttom .right .fix-con:nth-child(8) .right{
+ #main .fix .buttom .right .fix-con:nth-child(8) .right_con{
     width: 100px;
     height: 143px;
     margin-right: 10px;
@@ -1080,7 +1227,7 @@
     float: left;
 }
 
-#main .fix .buttom .right .fix-con:nth-child(9) .right{
+#main .fix .buttom .right .fix-con:nth-child(9) .right_con{
    width: 100px;
    height: 143px;
    margin-right: 10px;
@@ -1088,7 +1235,7 @@
    line-height: 143px;
    float: right;
 }
-#main .fix .buttom .right .fix-con:nth-child(9) .right i{
+#main .fix .buttom .right .fix-con:nth-child(9) .right_con i{
     font-size: 50px;
     color: #ff6700;
 }
@@ -1102,6 +1249,12 @@
 #main .fix .buttom .right .fix-con:nth-child(9) .left span{
    font-size: 12px;
 }
+
+/* 隐藏显示right */
+#main .main-con .fix .buttom .fixHideRight{
+    display: block;
+}
+
 
 /* ***********************配件************** */
 #main .banner-parts{
@@ -1133,12 +1286,15 @@
     cursor: pointer;
     float: left;
     padding-bottom: 2px;
-    margin: 4px 15px;
-    font-size: 14px;
+    padding: 4px 15px;
     color: #333;
-    transition: border 0.3s;
 }
-#main .parts .parts-nav li:hover{
+#main .parts .parts-nav li a{
+    transition: border 0.3s;
+    
+    font-size: 14px;
+}
+#main .parts .parts-nav li:hover a{
     border-bottom: 2px solid #ff6700;
     color: #ff6700;
 
@@ -1165,7 +1321,14 @@
 }
 
 /* right */
+#main .parts .buttom {
+    position: relative;
+}
 #main .parts .buttom .right{
+    position: absolute;
+    top: 0;
+    left: 234px;
+    display: none;
     width: 990px;
     height: 614px;
     float: right;
@@ -1267,12 +1430,13 @@
      padding-left: 30px;
      float: left;
  }
- #main .parts .buttom .right .parts-con:nth-child(8) .right img{
+ #main .parts .buttom .right .parts-con:nth-child(8) .right_con img{
      width: 100px;
      height: 100px;
      margin-top: 20px;
  }
- #main .parts .buttom .right .parts-con:nth-child(8) .right{
+ #main .parts .buttom .right .parts-con:nth-child(8) .right_con{
+    position: static;
     width: 100px;
     height: 143px;
     margin-right: 10px;
@@ -1304,7 +1468,8 @@
     float: left;
 }
 
-#main .parts .buttom .right .parts-con:nth-child(9) .right{
+#main .parts .buttom .right .parts-con:nth-child(9) .right_con{ 
+   position: static;
    width: 100px;
    height: 143px;
    margin-right: 10px;
@@ -1312,7 +1477,7 @@
    line-height: 143px;
    float: right;
 }
-#main .parts .buttom .right .parts-con:nth-child(9) .right i{
+#main .parts .buttom .right .parts-con:nth-child(9) .right_con i{
     font-size: 50px;
     color: #ff6700;
 }
@@ -1325,6 +1490,11 @@
 }
 #main .parts .buttom .right .parts-con:nth-child(9) .left span{
    font-size: 12px;
+}
+
+/* 隐藏显示right */
+#main .main-con .parts .buttom .partsHideRight{
+    display: block;
 }
 
 

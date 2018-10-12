@@ -98,34 +98,35 @@ i{
     height: 40px;
     background: #424242;
 }
+#header .header-con ol p a{
+    color: #b0b0b0;
+}
 #header .header-con ol p i{
     font-size: 14px;
     vertical-align: -2px;
     color: 
 }
 #header .header-con ol p:hover{
-    background: #fff;
-    color: #ff6700;
+    /* background: #fff;
+    color: #ff6700; */
 }
 
 #header .header-con .shopCarHide{
     display: none;
+    transition: all 1s;
     position: absolute;
+    z-index: 1000;
+    background: #fff;
+    border: 1px solid #e8e8e8;
     right:0;
     top: 40px;
     line-height: 100px;
     text-align: center;
-    box-shadow: 2px 2px 2px #ccc;
+    box-shadow: 2px 0px 10px #ccc;
     width: 320px;
-    height: 100px;
+    height: 95px;
 }
-#header .header-con ol i:hover{
-    color: red;
-    background: #fff;
-}
-#header .header-con ol i:hover .shopCarHide{
-    display: block;
-}
+
 
 
 
@@ -146,23 +147,32 @@ i{
     margin-top: 22px;
     float: left;
 }
+#header-nav .headerNavCon .firstNav{
+    display: block;
+    margin-left: 38px;
+    width: 132px;
+    height: 100px;
+    line-height: 100px;
+    text-align: right;
+    padding-right: 10px;
+    float: left;
+}
 /* nav */
-#header-nav .headerNavCon  ul{
-    margin-left: 56px;
-    width: 740px;
+#header-nav .headerNavCon  .header_bigNav{
+    width: 680px;
     height: 100px;
     line-height: 100px;
     float: left;
 }
-#header-nav .headerNavCon ul li{
+#header-nav .headerNavCon .header_bigNav li{
     float: left;
 }
-#header-nav .headerNavCon ul li a{
+#header-nav .headerNavCon .header_bigNav li a{
     font-size: 15px;
     margin: 0 10px;
     color: black;
 }
-#header-nav .headerNavCon ul li a:hover{
+#header-nav .headerNavCon .header_bigNav  li a:hover{
     color: #ff6700;
 }
 
@@ -175,13 +185,16 @@ i{
     float: right;
 }
 #header-nav .headerNavCon form input{
+    transition: all 1s;
     outline: none;
-    width: 241px;
+    padding-left: 15px;
+    width: 226px;
     height: 46px;
     float: left;
     border: 1px solid #e0e0e0;
 }
 #header-nav .headerNavCon form button{
+    transition: all 0.5s;
     width: 50px;
     height: 48px;
     float: left;
@@ -196,12 +209,23 @@ i{
 #header-nav .headerNavCon form button:hover{
     background: #ff6700;
 }
-#header-nav .headerNavCon form span{
-    /* position: absolute; */
+#header-nav .headerNavCon form .MI8{
+    transition: all 0.5s;
+    opacity: 1;
     font-size: 12px;
     background: #eeeeee;
 }
-#header-nav .headerNavCon form span a{
+#header-nav .headerNavCon form .MIX{
+    transition: all 0.5s;
+    opacity: 1;
+    font-size: 12px;
+    background: #eeeeee;
+}
+#header-nav .headerNavCon form .MI8 a{
+    color: #757584;
+    margin: 0 4px;
+}
+#header-nav .headerNavCon form .MIX a{
     color: #757584;
     margin: 0 4px;
 }
@@ -211,9 +235,161 @@ i{
     left: 116px;
     top: 12px;
 }
-#header-nav .headerNavCon form span:hover{
+#header-nav .headerNavCon form .MI8:hover{
     background: #ff6700;
 }
-#header-nav .headerNavCon form span:hover a{
+#header-nav .headerNavCon form .MIX:hover{
+    background: #ff6700;
+}
+#header-nav .headerNavCon form .MI8:hover a{
     color: #fff;
+}
+#header-nav .headerNavCon form .MIX:hover a{
+    color: #fff;
+}
+#header-nav .headerNavCon form .searchSelect{
+    display: none;
+    position: absolute;
+    z-index: 2000;
+    background: #fff;
+    border: 1px solid #ff6700;
+    top: 47px;
+    width: 241px;
+    height: 300px;
+}
+#header-nav .headerNavCon form .searchSelect .searchList{
+    cursor: pointer;
+    line-height: 30px;
+    width: 211px;
+    padding-right: 15px;
+    font-size: 12px;
+    padding-left: 15px;
+}
+#header-nav .headerNavCon form .searchSelect .searchList:hover{
+    background: #e8e8e8;
+}
+#header-nav .headerNavCon form .searchSelect .searchList .number{
+    float: right;
+    color: #757584;
+    /* margin-left: 50px; */
+}
+
+
+/* headerShopListHide */
+
+#header-nav .headerShopList{
+    overflow: hidden;
+    transition: all 0.3s;
+    position: absolute;
+    background: #fff;
+    z-index: 9999;
+    width: 100%;
+    height: 0;
+    border-top: 1px solid #ccc;
+}
+/* ++++++++++++++++++++++++++++++++++++++ */
+/* 小米手机 */
+#header-nav .headerShopList .headerShopList-con{
+    display: none;
+    width: 1226px;
+    height: 225px;
+    margin: 0 auto;
+}
+/* 红米手机 */
+/* #header-nav .headerShopList .headerShopList-con{
+    display: none;
+    width: 1226px;
+    height: 225px;
+    margin: 0 auto;
+} */
+/* 电视 */
+/* #header-nav .headerShopList .headerShopList-con{
+    display: none;
+    width: 1226px;
+    height: 225px;
+    margin: 0 auto;
+} */
+/* 笔记本 */
+/* #header-nav .headerShopList .headerShopList-con{
+    display: none;
+    width: 1226px;
+    height: 225px;
+    margin: 0 auto;
+} */
+/* 空调 */
+/* #header-nav .headerShopList .headerShopList-con{
+    display: none;
+    width: 1226px;
+    height: 225px;
+    margin: 0 auto;
+} */
+/* 新品 */
+/* #header-nav .headerShopList .headerShopList-con{
+    display: none;
+    width: 1226px;
+    height: 225px;
+    margin: 0 auto;
+} */
+/* 路由器 */
+/* #header-nav .headerShopList .headerShopList-con{
+    display: none;
+    width: 1226px;
+    height: 225px;
+    margin: 0 auto;
+} */
+/* 智能配件 */
+/* #header-nav .headerShopList .headerShopList-con{
+    display: none;
+    width: 1226px;
+    height: 225px;
+    margin: 0 auto;
+} */
+
+#header-nav .headerShopList .shopDisplay{
+    display: block;
+}
+/* ++++++++++++++++++++++++++++++++++++ */
+
+#header-nav .headerShopList .headerShop{
+    width: 200px;
+    height: 225px;
+    cursor: pointer;
+    text-align: center;
+    float: left;
+}
+#header-nav .headerShopList .top{
+    display: block;
+    width: 60px;
+    height: 20px;
+    text-align: center;
+    font-size: 12px;
+    margin: 0 auto;
+    line-height: 20px;
+    border: 1px solid #ff6700;
+    color: #ff6700;
+}
+#header-nav .headerShopList .img{
+    width: 200px;
+    height: 80px;
+    margin-top: 20px;
+    border-right: 2px solid #e8e8e8;
+    text-align: center;
+}
+#header-nav .headerShopList .img img{
+    width: 140px;
+    height: 80px;
+}
+#header-nav .headerShopList .headerShop .name{
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: 20px;
+}
+#header-nav .headerShopList .headerShop .price{
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: 15px;
+    color: #ff6700;
+}
+#header-nav .headerShopList .headerShop:last-child .img{
+    border-right: 0;
 }

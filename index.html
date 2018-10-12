@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="iconfont/iconfont.css">
     <link rel="stylesheet" href="//at.alicdn.com/t/font_861997_n2kdvxbvz3r.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/css/swiper.css">
     <title>小米商城</title>
 </head>
 
@@ -34,7 +35,7 @@
                 <li><a href="#">登录</a></li>
                 <li><a href="#">注册</a></li>
                 <li><a href="#">通知消息</a></li>
-                <p>
+                <p class="shopCar">
                     <i class="iconfont icon-gouwuche"></i>
                     <span>购物车(<span>0</span>)</span>
                 </p>
@@ -49,8 +50,8 @@
     <div id="header-nav">
         <div class="headerNavCon">
             <h1><img src="images/detail-img/logo-footer.png" alt=""></h1>
-            <ul>
-                <li><a href="#">全部商品分类</a></li>
+            <p class="firstNav">全部商品分类</p>
+            <ul class="header_bigNav">
                 <li><a href="#">小米手机</a></li>
                 <li><a href="#">红米</a></li>
                 <li><a href="#">电视</a></li>
@@ -59,25 +60,473 @@
                 <li><a href="#">新品</a></li>
                 <li><a href="#">路由器</a></li>
                 <li><a href="#">智能硬件</a></li>
-                <li><a href="#">服务</a></li>
-                <li><a href="#">社区</a></li>
+                <li><a href="#" id="1">服务</a></li>
+                <li><a href="#" id="1">社区</a></li>
             </ul>
             <form action="">
-                <input type="text">
+                <input type="text" class="searchInput">
                 <button><img src="images/detail-img/search.png" alt=""></button>
                 <p>
                     <span class="MI8"><a href="#">小米8</a></span>
                     <span class="MIX"><a href="#">小米MIX 2S</a></span>
 
                 </p>
+                <ul class="searchSelect">
+                    <li class="searchList"><span class="name">小米6X</span><span class="number">约有6件</span></li>
+                    <li class="searchList"><span class="name">小米MIX 2S</span><span class="number">约有6件</span></li>
+                    <li class="searchList"><span class="name">黑鲨游戏手机</span><span class="number">约有6件</span></li>
+                    <li class="searchList"><span class="name">红米Note 5</span><span class="number">约有6件</span></li>
+                    <li class="searchList"><span class="name">红米5A</span><span class="number">约有6件</span></li>
+                    <li class="searchList"><span class="name">小米电视4C</span><span class="number">约有6件</span></li>
+                    <li class="searchList"><span class="name">电视32英寸</span><span class="number">约有6件</span></li>
+                    <li class="searchList"><span class="name">笔记本pro</span><span class="number">约有6件</span></li>
+                    <li class="searchList"><span class="name">空气净化器</span><span class="number">约有6件</span></li>
+                    <li class="searchList"><span class="name">净水器</span><span class="number">约有6件</span></li>
+                </ul>
             </form>
+        </div>
+        <div class="headerShopList">
+            <!-- 小米手机 -->
+            <div class="headerShopList-con">
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/MI.png" alt="">
+                    </div>
+                    <p class="name">小米MIX 2S</p>
+                    <p class="price">3299元起</p>
+                </div>
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/MI.png" alt="">
+                    </div>
+                    <p class="name">小米MIX 2S</p>
+                    <p class="price">3299元起</p>
+                </div>
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/MI.png" alt="">
+                    </div>
+                    <p class="name">小米MIX 2S</p>
+                    <p class="price">3299元起</p>
+                </div>
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/MI.png" alt="">
+                    </div>
+                    <p class="name">小米MIX 2S</p>
+                    <p class="price">3299元起</p>
+                </div>
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/MI.png" alt="">
+                    </div>
+                    <p class="name">小米MIX 2S</p>
+                    <p class="price">3299元起</p>
+                </div>
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/MI.png" alt="">
+                    </div>
+                    <p class="name">小米MIX 2S</p>
+                    <p class="price">3299元起</p>
+                </div>
+            </div>
+            <!-- 红米手机 -->
+            <div class="headerShopList-con">
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/redMI.png" alt="">
+                    </div>
+                    <p class="name">红米6 pro</p>
+                    <p class="price">999元起</p>
+                </div>
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/redMI.png" alt="">
+                    </div>
+                    <p class="name">红米6 pro</p>
+                    <p class="price">999元起</p>
+                </div>
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/redMI.png" alt="">
+                    </div>
+                    <p class="name">红米6 pro</p>
+                    <p class="price">999元起</p>
+                </div>
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/redMI.png" alt="">
+                    </div>
+                    <p class="name">红米6 pro</p>
+                    <p class="price">999元起</p>
+                </div>
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/redMI.png" alt="">
+                    </div>
+                    <p class="name">红米6 pro</p>
+                    <p class="price">999元起</p>
+                </div>
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/redMI.png" alt="">
+                    </div>
+                    <p class="name">红米6 pro</p>
+                    <p class="price">999元起</p>
+                </div>
+            </div>
+            <!-- 电视 -->
+            <div class="headerShopList-con">
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/TV.png" alt="">
+                    </div>
+                    <p class="name">小米电视4 75英寸</p>
+                    <p class="price">8999元起</p>
+                </div>
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/TV.png" alt="">
+                    </div>
+                    <p class="name">小米电视4 75英寸</p>
+                    <p class="price">8999元起</p>
+                </div>
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/TV.png" alt="">
+                    </div>
+                    <p class="name">小米电视4 75英寸</p>
+                    <p class="price">8999元起</p>
+                </div>
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/TV.png" alt="">
+                    </div>
+                    <p class="name">小米电视4 75英寸</p>
+                    <p class="price">8999元起</p>
+                </div>
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/TV.png" alt="">
+                    </div>
+                    <p class="name">小米电视4 75英寸</p>
+                    <p class="price">8999元起</p>
+                </div>
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/TV.png" alt="">
+                    </div>
+                    <p class="name">小米电视4 75英寸</p>
+                    <p class="price">8999元起</p>
+                </div>
+            </div>
+            <!-- 笔记本 -->
+            <div class="headerShopList-con">
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/computer.png" alt="">
+                    </div>
+                    <p class="name">小米笔记本15.6"</p>
+                    <p class="price">4199元起</p>
+                </div>
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/computer.png" alt="">
+                    </div>
+                    <p class="name">小米笔记本15.6"</p>
+                    <p class="price">4199元起</p>
+                </div>
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/computer.png" alt="">
+                    </div>
+                    <p class="name">小米笔记本15.6"</p>
+                    <p class="price">4199元起</p>
+                </div>
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/computer.png" alt="">
+                    </div>
+                    <p class="name">小米笔记本15.6"</p>
+                    <p class="price">4199元起</p>
+                </div>
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/computer.png" alt="">
+                    </div>
+                    <p class="name">小米笔记本15.6"</p>
+                    <p class="price">4199元起</p>
+                </div>
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/computer.png" alt="">
+                    </div>
+                    <p class="name">小米笔记本15.6"</p>
+                    <p class="price">4199元起</p>
+                </div>
+            </div>
+            <!-- 空调 -->
+            <div class="headerShopList-con">
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/conditioner.jpg" alt="">
+                    </div>
+                    <p class="name">米家互联网空调</p>
+                    <p class="price">1999元起</p>
+                </div>
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/conditioner.jpg" alt="">
+                    </div>
+                    <p class="name">米家互联网空调</p>
+                    <p class="price">1999元起</p>
+                </div>
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/conditioner.jpg" alt="">
+                    </div>
+                    <p class="name">米家互联网空调</p>
+                    <p class="price">1999元起</p>
+                </div>
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/conditioner.jpg" alt="">
+                    </div>
+                    <p class="name">米家互联网空调</p>
+                    <p class="price">1999元起</p>
+                </div>
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/conditioner.jpg" alt="">
+                    </div>
+                    <p class="name">米家互联网空调</p>
+                    <p class="price">1999元起</p>
+                </div>
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/conditioner.jpg" alt="">
+                    </div>
+                    <p class="name">米家互联网空调</p>
+                    <p class="price">1999元起</p>
+                </div>
+            </div>
+            <!-- 新品 -->
+            <div class="headerShopList-con">
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/newShop.png" alt="">
+                    </div>
+                    <p class="name">小米8 屏幕指纹版</p>
+                    <p class="price">3199元起</p>
+                </div>
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/newShop.png" alt="">
+                    </div>
+                    <p class="name">小米8 屏幕指纹版</p>
+                    <p class="price">3199元起</p>
+                </div>
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/newShop.png" alt="">
+                    </div>
+                    <p class="name">小米8 屏幕指纹版</p>
+                    <p class="price">3199元起</p>
+                </div>
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/newShop.png" alt="">
+                    </div>
+                    <p class="name">小米8 屏幕指纹版</p>
+                    <p class="price">3199元起</p>
+                </div>
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/newShop.png" alt="">
+                    </div>
+                    <p class="name">小米8 屏幕指纹版</p>
+                    <p class="price">3199元起</p>
+                </div>
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/newShop.png" alt="">
+                    </div>
+                    <p class="name">小米8 屏幕指纹版</p>
+                    <p class="price">3199元起</p>
+                </div>
+            </div>
+            <!-- 路由器 -->
+            <div class="headerShopList-con">
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/Luyouqi.png" alt="">
+                    </div>
+                    <p class="name">小米路由器 3G</p>
+                    <p class="price">219元起</p>
+                </div>
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/Luyouqi.png" alt="">
+                    </div>
+                    <p class="name">小米路由器 3G</p>
+                    <p class="price">219元起</p>
+                </div>
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/Luyouqi.png" alt="">
+                    </div>
+                    <p class="name">小米路由器 3G</p>
+                    <p class="price">219元起</p>
+                </div>
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/Luyouqi.png" alt="">
+                    </div>
+                    <p class="name">小米路由器 3G</p>
+                    <p class="price">219元起</p>
+                </div>
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/Luyouqi.png" alt="">
+                    </div>
+                    <p class="name">小米路由器 3G</p>
+                    <p class="price">219元起</p>
+                </div>
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/Luyouqi.png" alt="">
+                    </div>
+                    <p class="name">小米路由器 3G</p>
+                    <p class="price">219元起</p>
+                </div>
+            </div>
+            <!-- 智能配件 -->
+            <div class="headerShopList-con">
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/robot.jpg" alt="">
+                    </div>
+                    <p class="name">米家扫地机器人</p>
+                    <p class="price">1699元起</p>
+                </div>
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/robot.jpg" alt="">
+                    </div>
+                    <p class="name">米家扫地机器人</p>
+                    <p class="price">1699元起</p>
+                </div>
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/robot.jpg" alt="">
+                    </div>
+                    <p class="name">米家扫地机器人</p>
+                    <p class="price">1699元起</p>
+                </div>
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/robot.jpg" alt="">
+                    </div>
+                    <p class="name">米家扫地机器人</p>
+                    <p class="price">1699元起</p>
+                </div>
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/robot.jpg" alt="">
+                    </div>
+                    <p class="name">米家扫地机器人</p>
+                    <p class="price">1699元起</p>
+                </div>
+                <div class="headerShop">
+                    <span class="top">新品</span>
+                    <div class="img">
+                        <img src="images/index-img/robot.jpg" alt="">
+                    </div>
+                    <p class="name">米家扫地机器人</p>
+                    <p class="price">1699元起</p>
+                </div>
+            </div>
+            <!-- 服务 -->
+            <div class="headerShopList-con">
+
+            </div>
+            <!-- 社区 -->
+            <div class="headerShopList-con">
+
+            </div>
         </div>
     </div>
 
     <!-- banner -->
     <div id="banner">
         <div class="banner-con">
-            <img src="images/index-img/banner.jpg" alt="">
+            <div class="banner-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                </div>
+                <div class="swiper-tip">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </div>
+                <div class="btn-left"><a href="javascript:;"></a></div>
+                <div class="btn-right"><a href="javascript:;"></a></div>
+            </div>
+
             <ul class="nav">
                 <li><a href="#"><span>手机 电话卡</span><span class="iconfont icon-you"></span></a></li>
                 <li><a href="#"><span>电视 盒子</span><span class="iconfont icon-you"></span></a></li>
@@ -90,15 +539,656 @@
                 <li><a href="#"><span>耳机 音响</span><span class="iconfont icon-you"></span></a></li>
                 <li><a href="#"><span>生活 箱包</span><span class="iconfont icon-you"></span></a></li>
             </ul>
-            <div class="btn-left"><a href="javascript:;"></a></div>
-            <div class="btn-right"><a href="javascript:;"></a></div>
-            <ol>
-                <li class="active"></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ol>
+            <!-- 手机 电话卡 -->
+            <div class="swiper-nav">
+                <div class="nav-con1">
+                    <div class="nav-con">
+                        <img src="images/index-img/phone-card.png" alt="">
+                        <span>小米8 青春版</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/phone-card.png" alt="">
+                        <span>小米8 青春版</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/phone-card.png" alt="">
+                        <span>小米8 青春版</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/phone-card.png" alt="">
+                        <span>小米8 青春版</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/phone-card.png" alt="">
+                        <span>小米8 青春版</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/phone-card.png" alt="">
+                        <span>小米8 青春版</span>
+                    </div>
+                </div>
+                <div class="nav-con1">
+                    <div class="nav-con">
+                        <img src="images/index-img/phone-card.png" alt="">
+                        <span>小米8 青春版</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/phone-card.png" alt="">
+                        <span>小米8 青春版</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/phone-card.png" alt="">
+                        <span>小米8 青春版</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/phone-card.png" alt="">
+                        <span>小米8 青春版</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/phone-card.png" alt="">
+                        <span>小米8 青春版</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/phone-card.png" alt="">
+                        <span>小米8 青春版</span>
+                    </div>
+                </div>
+                <div class="nav-con1">
+                    <div class="nav-con">
+                        <img src="images/index-img/phone-card.png" alt="">
+                        <span>小米8 青春版</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/phone-card.png" alt="">
+                        <span>小米8 青春版</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/phone-card.png" alt="">
+                        <span>小米8 青春版</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/phone-card.png" alt="">
+                        <span>小米8 青春版</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/phone-card.png" alt="">
+                        <span>小米8 青春版</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/phone-card.png" alt="">
+                        <span>小米8 青春版</span>
+                    </div>
+                </div>
+                <div class="nav-con1">
+                    <div class="nav-con">
+                        <img src="images/index-img/phone-card.png" alt="">
+                        <span>小米8 青春版</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/phone-card.png" alt="">
+                        <span>小米8 青春版</span>
+                    </div>
+
+                </div>
+            </div>
+            <!-- 电视 盒子 -->
+            <div class="swiper-nav">
+                <div class="nav-con1">
+                    <div class="nav-con">
+                        <img src="images/index-img/TV4A-50.png" alt="">
+                        <span>小米电视4A 50英寸</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/TV4A-50.png" alt="">
+                        <span>小米电视4A 50英寸</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/TV4A-50.png" alt="">
+                        <span>小米电视4A 50英寸</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/TV4A-50.png" alt="">
+                        <span>小米电视4A 50英寸</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/TV4A-50.png" alt="">
+                        <span>小米电视4A 50英寸</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/TV4A-50.png" alt="">
+                        <span>小米电视4A 50英寸</span>
+                    </div>
+                </div>
+                <div class="nav-con1">
+                    <div class="nav-con">
+                        <img src="images/index-img/TV4A-50.png" alt="">
+                        <span>小米电视4A 50英寸</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/TV4A-50.png" alt="">
+                        <span>小米电视4A 50英寸</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/TV4A-50.png" alt="">
+                        <span>小米电视4A 50英寸</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/TV4A-50.png" alt="">
+                        <span>小米电视4A 50英寸</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/TV4A-50.png" alt="">
+                        <span>小米电视4A 50英寸</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/TV4A-50.png" alt="">
+                        <span>小米电视4A 50英寸</span>
+                    </div>
+                </div>
+                <div class="nav-con1">
+                    <div class="nav-con">
+                        <img src="images/index-img/TV4A-50.png" alt="">
+                        <span>小米电视4A 50英寸</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/TV4A-50.png" alt="">
+                        <span>小米电视4A 50英寸</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/TV4A-50.png" alt="">
+                        <span>小米电视4A 50英寸</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/TV4A-50.png" alt="">
+                        <span>小米电视4A 50英寸</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/TV4A-50.png" alt="">
+                        <span>小米电视4A 50英寸</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/TV4A-50.png" alt="">
+                        <span>小米电视4A 50英寸</span>
+                    </div>
+                </div>
+                <div class="nav-con1">
+                    <div class="nav-con">
+                        <img src="images/index-img/TV4A-50.png" alt="">
+                        <span>小米电视4A 50英寸</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/TV4A-50.png" alt="">
+                        <span>小米电视4A 50英寸</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/TV4A-50.png" alt="">
+                        <span>小米电视4A 50英寸</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/TV4A-50.png" alt="">
+                        <span>小米电视4A 50英寸</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/TV4A-50.png" alt="">
+                        <span>小米电视4A 50英寸</span>
+                    </div>
+                </div>
+            </div>
+            <!-- 笔记本 平板 -->
+            <div class="swiper-nav">
+                <div class="nav-con1">
+                    <div class="nav-con">
+                        <img src="images/index-img/bijiben80.jpg" alt="">
+                        <span>小米8 青春版</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/bijiben80.jpg" alt="">
+                        <span>小米8 青春版</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/bijiben80.jpg" alt="">
+                        <span>小米8 青春版</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/bijiben80.jpg" alt="">
+                        <span>小米8 青春版</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/bijiben80.jpg" alt="">
+                        <span>小米8 青春版</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/bijiben80.jpg" alt="">
+                        <span>小米8 青春版</span>
+                    </div>
+                </div>
+                <div class="nav-con1">
+                    <div class="nav-con">
+                        <img src="images/index-img/bijiben80.jpg" alt="">
+                        <span>小米8 青春版</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/bijiben80.jpg" alt="">
+                        <span>小米8 青春版</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/bijiben80.jpg" alt="">
+                        <span>小米8 青春版</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/bijiben80.jpg" alt="">
+                        <span>小米8 青春版</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/bijiben80.jpg" alt="">
+                        <span>小米8 青春版</span>
+                    </div>
+                </div>
+            </div>
+            <!-- 家电 插线板 -->
+            <div class="swiper-nav">
+                <div class="nav-con1">
+                    <div class="nav-con">
+                        <img src="images/index-img/diancilu-80.jpg" alt="">
+                        <span>电磁炉</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/diancilu-80.jpg" alt="">
+                        <span>电磁炉</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/diancilu-80.jpg" alt="">
+                        <span>电磁炉</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/diancilu-80.jpg" alt="">
+                        <span>电磁炉</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/diancilu-80.jpg" alt="">
+                        <span>电磁炉</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/diancilu-80.jpg" alt="">
+                        <span>电磁炉</span>
+                    </div>
+                </div>
+                <div class="nav-con1">
+                    <div class="nav-con">
+                        <img src="images/index-img/diancilu-80.jpg" alt="">
+                        <span>电磁炉</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/diancilu-80.jpg" alt="">
+                        <span>电磁炉</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/diancilu-80.jpg" alt="">
+                        <span>电磁炉</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/diancilu-80.jpg" alt="">
+                        <span>电磁炉</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/diancilu-80.jpg" alt="">
+                        <span>电磁炉</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/diancilu-80.jpg" alt="">
+                        <span>电磁炉</span>
+                    </div>
+                </div>
+                <div class="nav-con1">
+                    <div class="nav-con">
+                        <img src="images/index-img/diancilu-80.jpg" alt="">
+                        <span>电磁炉</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/diancilu-80.jpg" alt="">
+                        <span>电磁炉</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/diancilu-80.jpg" alt="">
+                        <span>电磁炉</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/diancilu-80.jpg" alt="">
+                        <span>电磁炉</span>
+                    </div>
+                </div>
+            </div>
+            <!-- 出行 穿戴 -->
+            <div class="swiper-nav">
+                <div class="nav-con1">
+                    <div class="nav-con">
+                        <img src="images/index-img/zxc80-80.jpg" alt="">
+                        <span>自行车</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/zxc80-80.jpg" alt="">
+                        <span>自行车</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/zxc80-80.jpg" alt="">
+                        <span>自行车</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/zxc80-80.jpg" alt="">
+                        <span>自行车</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/zxc80-80.jpg" alt="">
+                        <span>自行车</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/zxc80-80.jpg" alt="">
+                        <span>自行车</span>
+                    </div>
+                </div>
+                <div class="nav-con1">
+                    <div class="nav-con">
+                        <img src="images/index-img/zxc80-80.jpg" alt="">
+                        <span>自行车</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/zxc80-80.jpg" alt="">
+                        <span>自行车</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/zxc80-80.jpg" alt="">
+                        <span>自行车</span>
+                    </div>
+                </div>
+            </div>
+            <!-- 智能 路由器 -->
+            <div class="swiper-nav">
+                <div class="nav-con1">
+                    <div class="nav-con">
+                        <img src="images/index-img/zhinengjiating80.jpg" alt="">
+                        <span>智能家庭</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/zhinengjiating80.jpg" alt="">
+                        <span>智能家庭</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/zhinengjiating80.jpg" alt="">
+                        <span>智能家庭</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/zhinengjiating80.jpg" alt="">
+                        <span>智能家庭</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/zhinengjiating80.jpg" alt="">
+                        <span>智能家庭</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/zhinengjiating80.jpg" alt="">
+                        <span>智能家庭</span>
+                    </div>
+                </div>
+            </div>
+            <!-- 电源 配件 -->
+            <div class="swiper-nav">
+                <div class="nav-con1">
+                    <div class="nav-con">
+                        <img src="images/index-img/dianyuan2.100080.jpg" alt="">
+                        <span>移动电源</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/dianyuan2.100080.jpg" alt="">
+                        <span>移动电源</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/dianyuan2.100080.jpg" alt="">
+                        <span>移动电源</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/dianyuan2.100080.jpg" alt="">
+                        <span>移动电源</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/dianyuan2.100080.jpg" alt="">
+                        <span>移动电源</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/dianyuan2.100080.jpg" alt="">
+                        <span>移动电源</span>
+                    </div>
+                </div>
+                <div class="nav-con1">
+                    <div class="nav-con">
+                        <img src="images/index-img/dianyuan2.100080.jpg" alt="">
+                        <span>移动电源</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/dianyuan2.100080.jpg" alt="">
+                        <span>移动电源</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/dianyuan2.100080.jpg" alt="">
+                        <span>移动电源</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/dianyuan2.100080.jpg" alt="">
+                        <span>移动电源</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/dianyuan2.100080.jpg" alt="">
+                        <span>移动电源</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/dianyuan2.100080.jpg" alt="">
+                        <span>移动电源</span>
+                    </div>
+                </div>
+                <div class="nav-con1">
+                    <div class="nav-con">
+                        <img src="images/index-img/dianyuan2.100080.jpg" alt="">
+                        <span>移动电源</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/dianyuan2.100080.jpg" alt="">
+                        <span>移动电源</span>
+                    </div>
+                </div>
+            </div>
+            <!-- 健康 儿童 -->
+            <div class="swiper-nav">
+                <div class="nav-con1">
+                    <div class="nav-con">
+                        <img src="images/index-img/mitugushi-80.jpg" alt="">
+                        <span>早教启智</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/mitugushi-80.jpg" alt="">
+                        <span>早教启智</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/mitugushi-80.jpg" alt="">
+                        <span>早教启智</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/mitugushi-80.jpg" alt="">
+                        <span>早教启智</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/mitugushi-80.jpg" alt="">
+                        <span>早教启智</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/mitugushi-80.jpg" alt="">
+                        <span>早教启智</span>
+                    </div>
+                </div>
+                <div class="nav-con1">
+                    <div class="nav-con">
+                        <img src="images/index-img/mitugushi-80.jpg" alt="">
+                        <span>早教启智</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/mitugushi-80.jpg" alt="">
+                        <span>早教启智</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/mitugushi-80.jpg" alt="">
+                        <span>早教启智</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/mitugushi-80.jpg" alt="">
+                        <span>早教启智</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/mitugushi-80.jpg" alt="">
+                        <span>早教启智</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/mitugushi-80.jpg" alt="">
+                        <span>早教启智</span>
+                    </div>
+                </div>
+                <div class="nav-con1">
+                    <div class="nav-con">
+                        <img src="images/index-img/mitugushi-80.jpg" alt="">
+                        <span>早教启智</span>
+                    </div>
+                </div>
+            </div>
+            <!-- 耳机 音箱 -->
+            <div class="swiper-nav">
+                <div class="nav-con1">
+                    <div class="nav-con">
+                        <img src="images/index-img/pinpai80.jpg" alt="">
+                        <span>品牌耳机</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/pinpai80.jpg" alt="">
+                        <span>品牌耳机</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/pinpai80.jpg" alt="">
+                        <span>品牌耳机</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/pinpai80.jpg" alt="">
+                        <span>品牌耳机</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/pinpai80.jpg" alt="">
+                        <span>品牌耳机</span>
+                    </div>
+                </div>
+            </div>
+            <!-- 生活 箱包 -->
+            <div class="swiper-nav">
+                <div class="nav-con1">
+                    <div class="nav-con">
+                        <img src="images/index-img/xiangbao-80.jpg" alt="">
+                        <span>双肩包</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/xiangbao-80.jpg" alt="">
+                        <span>双肩包</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/xiangbao-80.jpg" alt="">
+                        <span>双肩包</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/xiangbao-80.jpg" alt="">
+                        <span>双肩包</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/xiangbao-80.jpg" alt="">
+                        <span>双肩包</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/xiangbao-80.jpg" alt="">
+                        <span>双肩包</span>
+                    </div>
+                </div>
+                <div class="nav-con1">
+                    <div class="nav-con">
+                        <img src="images/index-img/xiangbao-80.jpg" alt="">
+                        <span>双肩包</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/xiangbao-80.jpg" alt="">
+                        <span>双肩包</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/xiangbao-80.jpg" alt="">
+                        <span>双肩包</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/xiangbao-80.jpg" alt="">
+                        <span>双肩包</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/xiangbao-80.jpg" alt="">
+                        <span>双肩包</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/xiangbao-80.jpg" alt="">
+                        <span>双肩包</span>
+                    </div>
+                </div>
+                <div class="nav-con1">
+                    <div class="nav-con">
+                        <img src="images/index-img/xiangbao-80.jpg" alt="">
+                        <span>双肩包</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/xiangbao-80.jpg" alt="">
+                        <span>双肩包</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/xiangbao-80.jpg" alt="">
+                        <span>双肩包</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/xiangbao-80.jpg" alt="">
+                        <span>双肩包</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/xiangbao-80.jpg" alt="">
+                        <span>双肩包</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/xiangbao-80.jpg" alt="">
+                        <span>双肩包</span>
+                    </div>
+                </div>
+                <div class="nav-con1">
+                    <div class="nav-con">
+                        <img src="images/index-img/xiangbao-80.jpg" alt="">
+                        <span>双肩包</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/xiangbao-80.jpg" alt="">
+                        <span>双肩包</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/xiangbao-80.jpg" alt="">
+                        <span>双肩包</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/xiangbao-80.jpg" alt="">
+                        <span>双肩包</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/xiangbao-80.jpg" alt="">
+                        <span>双肩包</span>
+                    </div>
+                    <div class="nav-con">
+                        <img src="images/index-img/xiangbao-80.jpg" alt="">
+                        <span>双肩包</span>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
     <div id="listNav">
@@ -124,55 +1214,110 @@
             <div class="top">
                 <span class="title">小米闪购</span>
                 <span class="btn">
-                    <i class="iconfont icon-zuo"></i>
-                    <i class="iconfont icon-you"></i>
+                    <i class="iconfont icon-zuo btn-left"></i>
+                    <i class="iconfont icon-you btn-right"></i>
                 </span>
             </div>
             <div class="buttom">
-                <div class="buttom-con1">
-                    <p>12:00场</p>
-                    <img src="images/index-img/flashpurchase.png" alt="">
-                    <p>距离开始还有</p>
-                    <div class="time">
-                        <div class="hou">00</div>
-                        <span>:</span>
-                        <div class="min">00</div>
-                        <span>:</span>
-                        <div class="sec">00</div>
+                <div class="buttom-left">
+                    <div class="buttom-con1">
+                        <p class="timeAll">24:00场</p>
+                        <img src="images/index-img/flashpurchase.png" alt="">
+                        <p>距离开始还有</p>
+                        <div class="time">
+                            <div class="hou">00</div>
+                            <span>:</span>
+                            <div class="min">00</div>
+                            <span>:</span>
+                            <div class="sec">00</div>
 
+                        </div>
                     </div>
                 </div>
-                <div class="buttom-con">
-                    <span class="top">5折秒杀</span>
-                    <img src="images/index-img/mi-shop.jpg" alt="">
-                    <p class="title">小米电视4X 55英寸 黑色 55</p>
-                    <p class="intro">4K HDR,人工智能语音</p>
-                    <span class="price">1399&ensp;元</span>&ensp;
-                    <span>2799&ensp;元</span>
-                </div>
-                <div class="buttom-con">
-                    <span class="top">5折秒杀</span>
-                    <img src="images/index-img/mi-shop.jpg" alt="">
-                    <p class="title">小米电视4X 55英寸 黑色 55</p>
-                    <p class="intro">4K HDR,人工智能语音</p>
-                    <span class="price">1399&ensp;元</span>&ensp;
-                    <span>2799&ensp;元</span>
-                </div>
-                <div class="buttom-con">
-                    <span class="top">5折秒杀</span>
-                    <img src="images/index-img/mi-shop.jpg" alt="">
-                    <p class="title">小米电视4X 55英寸 黑色 55</p>
-                    <p class="intro">4K HDR,人工智能语音</p>
-                    <span class="price">1399&ensp;元</span>&ensp;
-                    <span>2799&ensp;元</span>
-                </div>
-                <div class="buttom-con">
-                    <span class="top">5折秒杀</span>
-                    <img src="images/index-img/mi-shop.jpg" alt="">
-                    <p class="title">小米电视4X 55英寸 黑色 55</p>
-                    <p class="intro">4K HDR,人工智能语音</p>
-                    <span class="price">1399&ensp;元</span>&ensp;
-                    <span>2799&ensp;元</span>
+                <div class="buttom-right">
+                    <div class="right-con">
+                        <div class="buttom-con">
+                            <span class="top">5折秒杀</span>
+                            <img src="images/index-img/mi-shop.jpg" alt="">
+                            <p class="title">小米电视4X 55英寸 黑色 55</p>
+                            <p class="intro">4K HDR,人工智能语音</p>
+                            <span class="price">1399&ensp;元</span>&ensp;
+                            <span>2799&ensp;元</span>
+                        </div>
+                        <div class="buttom-con">
+                            <span class="top">5折秒杀</span>
+                            <img src="images/index-img/mi-shop.jpg" alt="">
+                            <p class="title">小米电视4X 55英寸 黑色 55</p>
+                            <p class="intro">4K HDR,人工智能语音</p>
+                            <span class="price">1399&ensp;元</span>&ensp;
+                            <span>2799&ensp;元</span>
+                        </div>
+                        <div class="buttom-con">
+                            <span class="top">5折秒杀</span>
+                            <img src="images/index-img/mi-shop.jpg" alt="">
+                            <p class="title">小米电视4X 55英寸 黑色 55</p>
+                            <p class="intro">4K HDR,人工智能语音</p>
+                            <span class="price">1399&ensp;元</span>&ensp;
+                            <span>2799&ensp;元</span>
+                        </div>
+                        <div class="buttom-con">
+                            <span class="top">5折秒杀</span>
+                            <img src="images/index-img/mi-shop.jpg" alt="">
+                            <p class="title">小米电视4X 55英寸 黑色 55</p>
+                            <p class="intro">4K HDR,人工智能语音</p>
+                            <span class="price">1399&ensp;元</span>&ensp;
+                            <span>2799&ensp;元</span>
+                        </div>
+                        <div class="buttom-con">
+                            <span class="top">5折秒杀</span>
+                            <img src="images/index-img/mi-shop.jpg" alt="">
+                            <p class="title">小米电视4X 55英寸 黑色 55</p>
+                            <p class="intro">4K HDR,人工智能语音</p>
+                            <span class="price">1399&ensp;元</span>&ensp;
+                            <span>2799&ensp;元</span>
+                        </div>
+                        <div class="buttom-con">
+                            <span class="top">5折秒杀</span>
+                            <img src="images/index-img/mi-shop.jpg" alt="">
+                            <p class="title">小米电视4X 55英寸 黑色 55</p>
+                            <p class="intro">4K HDR,人工智能语音</p>
+                            <span class="price">1399&ensp;元</span>&ensp;
+                            <span>2799&ensp;元</span>
+                        </div>
+                        <div class="buttom-con">
+                            <span class="top">5折秒杀</span>
+                            <img src="images/index-img/mi-shop.jpg" alt="">
+                            <p class="title">小米电视4X 55英寸 黑色 55</p>
+                            <p class="intro">4K HDR,人工智能语音</p>
+                            <span class="price">1399&ensp;元</span>&ensp;
+                            <span>2799&ensp;元</span>
+                        </div>
+                        <div class="buttom-con">
+                            <span class="top">5折秒杀</span>
+                            <img src="images/index-img/mi-shop.jpg" alt="">
+                            <p class="title">小米电视4X 55英寸 黑色 55</p>
+                            <p class="intro">4K HDR,人工智能语音</p>
+                            <span class="price">1399&ensp;元</span>&ensp;
+                            <span>2799&ensp;元</span>
+                        </div>
+                        <div class="buttom-con">
+                            <span class="top">5折秒杀</span>
+                            <img src="images/index-img/mi-shop.jpg" alt="">
+                            <p class="title">小米电视4X 55英寸 黑色 55</p>
+                            <p class="intro">4K HDR,人工智能语音</p>
+                            <span class="price">1399&ensp;元</span>&ensp;
+                            <span>2799&ensp;元</span>
+                        </div>
+                        <div class="buttom-con">
+                            <span class="top">5折秒杀</span>
+                            <img src="images/index-img/mi-shop.jpg" alt="">
+                            <p class="title">小米电视4X 55英寸 黑色 55</p>
+                            <p class="intro">4K HDR,人工智能语音</p>
+                            <span class="price">1399&ensp;元</span>&ensp;
+                            <span>2799&ensp;元</span>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -291,10 +1436,10 @@
                 <div class="title">
                     <span>家电</span>
                     <ul class="ele-nav">
-                        <li>热门</li>
-                        <li>电视影音</li>
-                        <li>电脑</li>
-                        <li>家居</li>
+                        <li><a>热门</a></li>
+                        <li><a>电视影音</a></li>
+                        <li><a>电脑</a></li>
+                        <li><a>家居</a></li>
                     </ul>
                 </div>
                 <div class="buttom">
@@ -312,10 +1457,133 @@
                     </div>
 
                     <!-- right -->
+
+                    <!-- 热门 -->
+                    <div class="right eleHideRight">
+                        <div class="ele-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/phone-con.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="ele-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/phone-con.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="ele-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/phone-con.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="ele-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/phone-con.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="ele-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/phone-con.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="ele-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/phone-con.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="ele-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/phone-con.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+
+                        <!-- more -->
+                        <div class="ele-con">
+                            <div class="left">
+                                <p>小米净水器</p>
+                                <span>1799元</span>
+                            </div>
+                            <div class="right_con">
+                                <img src="images/index-img/ele-conMore.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="ele-con">
+                            <div class="left">
+                                <p>浏览更多</p>
+                                <span>热门</span>
+                            </div>
+                            <div class="right_con">
+                                <i class="iconfont icon-youjiantou"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 电脑影音 -->
                     <div class="right">
                         <div class="ele-con">
                             <span class="tip">新品</span>
-                            <img src="images/index-img/phone-con.jpg" alt="">
+                            <img src="images/index-img/computer-TV.jpg" alt="">
                             <p class="phoneName">小米8 青春版 4GB+64GB</p>
                             <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
                             <div class="price">
@@ -329,7 +1597,7 @@
                         </div>
                         <div class="ele-con">
                             <span class="tip">新品</span>
-                            <img src="images/index-img/phone-con.jpg" alt="">
+                            <img src="images/index-img/computer-TV.jpg" alt="">
                             <p class="phoneName">小米8 青春版 4GB+64GB</p>
                             <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
                             <div class="price">
@@ -343,7 +1611,7 @@
                         </div>
                         <div class="ele-con">
                             <span class="tip">新品</span>
-                            <img src="images/index-img/phone-con.jpg" alt="">
+                            <img src="images/index-img/computer-TV.jpg" alt="">
                             <p class="phoneName">小米8 青春版 4GB+64GB</p>
                             <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
                             <div class="price">
@@ -357,7 +1625,7 @@
                         </div>
                         <div class="ele-con">
                             <span class="tip">新品</span>
-                            <img src="images/index-img/phone-con.jpg" alt="">
+                            <img src="images/index-img/computer-TV.jpg" alt="">
                             <p class="phoneName">小米8 青春版 4GB+64GB</p>
                             <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
                             <div class="price">
@@ -371,7 +1639,7 @@
                         </div>
                         <div class="ele-con">
                             <span class="tip">新品</span>
-                            <img src="images/index-img/phone-con.jpg" alt="">
+                            <img src="images/index-img/computer-TV.jpg" alt="">
                             <p class="phoneName">小米8 青春版 4GB+64GB</p>
                             <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
                             <div class="price">
@@ -385,7 +1653,7 @@
                         </div>
                         <div class="ele-con">
                             <span class="tip">新品</span>
-                            <img src="images/index-img/phone-con.jpg" alt="">
+                            <img src="images/index-img/computer-TV.jpg" alt="">
                             <p class="phoneName">小米8 青春版 4GB+64GB</p>
                             <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
                             <div class="price">
@@ -399,7 +1667,7 @@
                         </div>
                         <div class="ele-con">
                             <span class="tip">新品</span>
-                            <img src="images/index-img/phone-con.jpg" alt="">
+                            <img src="images/index-img/computer-TV.jpg" alt="">
                             <p class="phoneName">小米8 青春版 4GB+64GB</p>
                             <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
                             <div class="price">
@@ -416,7 +1684,7 @@
                                 <p>小米净水器</p>
                                 <span>1799元</span>
                             </div>
-                            <div class="right">
+                            <div class="right_con">
                                 <img src="images/index-img/ele-conMore.jpg" alt="">
                             </div>
                         </div>
@@ -425,7 +1693,245 @@
                                 <p>浏览更多</p>
                                 <span>热门</span>
                             </div>
-                            <div class="right">
+                            <div class="right_con">
+                                <i class="iconfont icon-youjiantou"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 电脑 -->
+                    <div class="right">
+                        <div class="ele-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/robot-right.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="ele-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/robot-right.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="ele-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/robot-right.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="ele-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/robot-right.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="ele-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/robot-right.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="ele-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/robot-right.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="ele-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/robot-right.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="ele-con">
+                            <div class="left">
+                                <p>小米净水器</p>
+                                <span>1799元</span>
+                            </div>
+                            <div class="right_con">
+                                <img src="images/index-img/ele-conMore.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="ele-con">
+                            <div class="left">
+                                <p>浏览更多</p>
+                                <span>热门</span>
+                            </div>
+                            <div class="right_con">
+                                <i class="iconfont icon-youjiantou"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 家居 -->
+                    <div class="right">
+                        <div class="ele-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/jiaju.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="ele-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/jiaju.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="ele-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/jiaju.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="ele-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/jiaju.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="ele-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/jiaju.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="ele-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/jiaju.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="ele-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/jiaju.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="ele-con">
+                            <div class="left">
+                                <p>小米净水器</p>
+                                <span>1799元</span>
+                            </div>
+                            <div class="right_con">
+                                <img src="images/index-img/ele-conMore.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="ele-con">
+                            <div class="left">
+                                <p>浏览更多</p>
+                                <span>热门</span>
+                            </div>
+                            <div class="right_con">
                                 <i class="iconfont icon-youjiantou"></i>
                             </div>
                         </div>
@@ -441,17 +1947,17 @@
                 <div class="title">
                     <span>智能</span>
                     <ul class="robot-nav">
-                        <li>热门</li>
-                        <li>出行</li>
-                        <li>健康</li>
-                        <li>酷玩</li>
-                        <li>路由器</li>
+                        <li><a>热门</a></li>
+                        <li><a>出行</a></li>
+                        <li><a>健康</a></li>
+                        <li><a>酷玩</a></li>
+                        <li><a>路由器</a></li>
                     </ul>
                 </div>
                 <div class="buttom">
 
 
-                    <!-- left -->
+                    <!-- ************left************** -->
                     <div class="left">
                         <div class="robot-con">
                             <img src="images/index-img/robot-left1.jpg" alt="">
@@ -462,8 +1968,10 @@
                         </div>
                     </div>
 
-                    <!-- right -->
-                    <div class="right">
+                    <!-- ***************right************** -->
+
+                    <!-- 热门 -->
+                    <div class="right robotHideRight">
                         <div class="robot-con">
                             <span class="tip">新品</span>
                             <img src="images/index-img/robot-right.jpg" alt="">
@@ -567,7 +2075,7 @@
                                 <p>小米净水器</p>
                                 <span>1799元</span>
                             </div>
-                            <div class="right">
+                            <div class="right_con">
                                 <img src="images/index-img/ele-conMore.jpg" alt="">
                             </div>
                         </div>
@@ -576,11 +2084,488 @@
                                 <p>浏览更多</p>
                                 <span>热门</span>
                             </div>
-                            <div class="right">
+                            <div class="right_con">
                                 <i class="iconfont icon-youjiantou"></i>
                             </div>
                         </div>
                     </div>
+                    <!-- 出行 -->
+                    <div class="right">
+                        <div class="robot-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/chuxing.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="robot-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/chuxing.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="robot-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/chuxing.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="robot-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/chuxing.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="robot-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/chuxing.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="robot-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/chuxing.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="robot-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/chuxing.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="robot-con">
+                            <div class="left">
+                                <p>小米净水器</p>
+                                <span>1799元</span>
+                            </div>
+                            <div class="right_con">
+                                <img src="images/index-img/ele-conMore.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="robot-con">
+                            <div class="left">
+                                <p>浏览更多</p>
+                                <span>热门</span>
+                            </div>
+                            <div class="right_con">
+                                <i class="iconfont icon-youjiantou"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 健康 -->
+                    <div class="right">
+                        <div class="robot-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/jiankang.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="robot-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/jiankang.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="robot-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/jiankang.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="robot-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/jiankang.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="robot-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/jiankang.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="robot-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/jiankang.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="robot-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/jiankang.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="robot-con">
+                            <div class="left">
+                                <p>小米净水器</p>
+                                <span>1799元</span>
+                            </div>
+                            <div class="right_con">
+                                <img src="images/index-img/ele-conMore.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="robot-con">
+                            <div class="left">
+                                <p>浏览更多</p>
+                                <span>热门</span>
+                            </div>
+                            <div class="right_con">
+                                <i class="iconfont icon-youjiantou"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 酷玩 -->
+                    <div class="right">
+                        <div class="robot-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/kuwan.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="robot-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/kuwan.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="robot-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/kuwan.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="robot-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/kuwan.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="robot-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/kuwan.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="robot-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/kuwan.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="robot-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/kuwan.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="robot-con">
+                            <div class="left">
+                                <p>小米净水器</p>
+                                <span>1799元</span>
+                            </div>
+                            <div class="right_con">
+                                <img src="images/index-img/ele-conMore.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="robot-con">
+                            <div class="left">
+                                <p>浏览更多</p>
+                                <span>热门</span>
+                            </div>
+                            <div class="right_con">
+                                <i class="iconfont icon-youjiantou"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 路由器 -->
+                    <div class="right">
+                        <div class="robot-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/luyouqi11.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="robot-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/luyouqi11.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="robot-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/luyouqi11.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="robot-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/luyouqi11.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="robot-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/luyouqi11.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="robot-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/luyouqi11.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="robot-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/luyouqi11.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="robot-con">
+                            <div class="left">
+                                <p>小米净水器</p>
+                                <span>1799元</span>
+                            </div>
+                            <div class="right_con">
+                                <img src="images/index-img/ele-conMore.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="robot-con">
+                            <div class="left">
+                                <p>浏览更多</p>
+                                <span>热门</span>
+                            </div>
+                            <div class="right_con">
+                                <i class="iconfont icon-youjiantou"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
 
@@ -592,10 +2577,10 @@
                 <div class="title">
                     <span>搭配</span>
                     <ul class="fix-nav">
-                        <li>热门</li>
-                        <li>耳机音箱</li>
-                        <li>电源</li>
-                        <li>电池存储卡</li>
+                        <li><a>热门</a></li>
+                        <li><a>耳机音箱</a></li>
+                        <li><a>电源</a></li>
+                        <li><a>电池存储卡</a></li>
                     </ul>
                 </div>
                 <div class="buttom">
@@ -613,7 +2598,8 @@
                     </div>
 
                     <!-- right -->
-                    <div class="right">
+                    <!-- 热门 -->
+                    <div class="right fixHideRight">
                         <div class="fix-con">
                             <span class="tip">新品</span>
                             <img src="images/index-img/fix-right.jpg" alt="">
@@ -717,7 +2703,7 @@
                                 <p>小米净水器</p>
                                 <span>1799元</span>
                             </div>
-                            <div class="right">
+                            <div class="right_con">
                                 <img src="images/index-img/ele-conMore.jpg" alt="">
                             </div>
                         </div>
@@ -726,7 +2712,364 @@
                                 <p>浏览更多</p>
                                 <span>热门</span>
                             </div>
-                            <div class="right">
+                            <div class="right_con">
+                                <i class="iconfont icon-youjiantou"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 耳机 音箱 -->
+                    <div class="right">
+                        <div class="fix-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/erji.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="fix-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/erji.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="fix-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/erji.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="fix-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/erji.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="fix-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/erji.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="fix-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/erji.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="fix-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/erji.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="fix-con">
+                            <div class="left">
+                                <p>小米净水器</p>
+                                <span>1799元</span>
+                            </div>
+                            <div class="right_con">
+                                <img src="images/index-img/ele-conMore.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="fix-con">
+                            <div class="left">
+                                <p>浏览更多</p>
+                                <span>热门</span>
+                            </div>
+                            <div class="right_con">
+                                <i class="iconfont icon-youjiantou"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 电源 -->
+                    <div class="right">
+                        <div class="fix-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/dianyuan.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="fix-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/dianyuan.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="fix-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/dianyuan.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="fix-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/dianyuan.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="fix-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/dianyuan.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="fix-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/dianyuan.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="fix-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/dianyuan.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="fix-con">
+                            <div class="left">
+                                <p>小米净水器</p>
+                                <span>1799元</span>
+                            </div>
+                            <div class="right_con">
+                                <img src="images/index-img/ele-conMore.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="fix-con">
+                            <div class="left">
+                                <p>浏览更多</p>
+                                <span>热门</span>
+                            </div>
+                            <div class="right_con">
+                                <i class="iconfont icon-youjiantou"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 电池存储卡 -->
+                    <div class="right">
+                        <div class="fix-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/dianchicunchuka.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="fix-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/dianchicunchuka.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="fix-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/dianchicunchuka.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="fix-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/dianchicunchuka.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="fix-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/dianchicunchuka.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="fix-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/dianchicunchuka.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="fix-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/dianchicunchuka.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="fix-con">
+                            <div class="left">
+                                <p>小米净水器</p>
+                                <span>1799元</span>
+                            </div>
+                            <div class="right_con">
+                                <img src="images/index-img/ele-conMore.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="fix-con">
+                            <div class="left">
+                                <p>浏览更多</p>
+                                <span>热门</span>
+                            </div>
+                            <div class="right_con">
                                 <i class="iconfont icon-youjiantou"></i>
                             </div>
                         </div>
@@ -742,10 +3085,10 @@
                 <div class="title">
                     <span>配件</span>
                     <ul class="parts-nav">
-                        <li>热门</li>
-                        <li>保护套</li>
-                        <li>贴膜</li>
-                        <li>其他配件</li>
+                        <li><a>热门</a></li>
+                        <li><a>保护套</a></li>
+                        <li><a>贴膜</a></li>
+                        <li><a>其他配件</a></li>
                     </ul>
                 </div>
                 <div class="buttom">
@@ -763,7 +3106,8 @@
                     </div>
 
                     <!-- right -->
-                    <div class="right">
+                    <!-- 热门 -->
+                    <div class="right partsHideRight">
                         <div class="parts-con">
                             <span class="tip">新品</span>
                             <img src="images/index-img/parts-right.jpg" alt="">
@@ -867,7 +3211,7 @@
                                 <p>小米净水器</p>
                                 <span>1799元</span>
                             </div>
-                            <div class="right">
+                            <div class="right_con">
                                 <img src="images/index-img/ele-conMore.jpg" alt="">
                             </div>
                         </div>
@@ -876,7 +3220,364 @@
                                 <p>浏览更多</p>
                                 <span>热门</span>
                             </div>
-                            <div class="right">
+                            <div class="right_con">
+                                <i class="iconfont icon-youjiantou"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 保护套 -->
+                    <div class="right">
+                        <div class="parts-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/baohutao.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="parts-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/baohutao.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="parts-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/baohutao.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="parts-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/baohutao.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="parts-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/baohutao.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="parts-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/baohutao.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="parts-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/baohutao.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="parts-con">
+                            <div class="left">
+                                <p>小米净水器</p>
+                                <span>1799元</span>
+                            </div>
+                            <div class="right_con">
+                                <img src="images/index-img/ele-conMore.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="parts-con">
+                            <div class="left">
+                                <p>浏览更多</p>
+                                <span>热门</span>
+                            </div>
+                            <div class="right_con">
+                                <i class="iconfont icon-youjiantou"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 贴膜 -->
+                    <div class="right">
+                        <div class="parts-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/tiemo.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="parts-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/tiemo.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="parts-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/tiemo.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="parts-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/tiemo.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="parts-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/tiemo.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="parts-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/tiemo.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="parts-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/tiemo.jpg" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="parts-con">
+                            <div class="left">
+                                <p>小米净水器</p>
+                                <span>1799元</span>
+                            </div>
+                            <div class="right_con">
+                                <img src="images/index-img/ele-conMore.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="parts-con">
+                            <div class="left">
+                                <p>浏览更多</p>
+                                <span>热门</span>
+                            </div>
+                            <div class="right_con">
+                                <i class="iconfont icon-youjiantou"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 其他配件 -->
+                    <div class="right">
+                        <div class="parts-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/qitapeijian.png" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="parts-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/qitapeijian.png" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="parts-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/qitapeijian.png" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="parts-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/qitapeijian.png" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="parts-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/qitapeijian.png" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="parts-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/qitapeijian.png" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="parts-con">
+                            <span class="tip">新品</span>
+                            <img src="images/index-img/qitapeijian.png" alt="">
+                            <p class="phoneName">小米8 青春版 4GB+64GB</p>
+                            <p class="intro">潮流镜面渐变色，2400万自拍旗舰</p>
+                            <div class="price">
+                                <span>1399&ensp;元</span>
+                                <span></span>
+                            </div>
+                            <div class="hover">
+                                <p>一如既往的好，小米情怀</p>
+                                <span>来自于惊喜的评价</span>
+                            </div>
+                        </div>
+                        <div class="parts-con">
+                            <div class="left">
+                                <p>小米净水器</p>
+                                <span>1799元</span>
+                            </div>
+                            <div class="right_con">
+                                <img src="images/index-img/ele-conMore.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="parts-con">
+                            <div class="left">
+                                <p>浏览更多</p>
+                                <span>热门</span>
+                            </div>
+                            <div class="right_con">
                                 <i class="iconfont icon-youjiantou"></i>
                             </div>
                         </div>
@@ -1362,5 +4063,36 @@
         </div>
     </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/js/swiper.js"></script>
+<script src="js/header.js"></script>
+<script src="js/header-nav.js"></script>
+<script src="js/banner.js"></script>
+<script src="js/main.js"></script>
+<script src="js/mi-shop.js"></script>
+<script>
+    // 头部购物车
+    headerJs.init();
+    //header-nav
+    header_nav.init();
+    //轮播图
+    var mySwiper = new Swiper('.banner-swiper', {
+        autoplay: true,
+        loop: true,
+        navigation: {
+            nextEl: ".btn-left",
+            prevEl: ".btn-right",
+        },
+        effect: "fade",
+        speed: 500,
+    });
+    banner.init("#banner .banner-con");
+    main_ele.init("#main .main-con .ele");
+    main_robot.init("#main .main-con .robot");
+    main_fix.init("#main .main-con .fix");
+    main_parts.init("#main .main-con .parts");
+    mi_shop.init("#mi-shop .mi-shop-con");
+    
+
+</script>
 
 </html>

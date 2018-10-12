@@ -40,155 +40,39 @@ body{
     margin-top: 30px;
     line-height: 20px;
 }
-#main .register-table .regbox h4{
+
+/* name */
+#main .register-table .regbox form .name{
+    width: 332px;
+    height: 100px;
+}
+
+#main .register-table .regbox form h4{
     padding-bottom: 5px;
     font-size: 14px;
     color: #333;
     font-weight: normal;
 }
-#main .register-table .regbox .countryInput{
+#main .register-table .regbox form input{
+    padding-left: 20px;
+    width: 310px;
     height: 40px;
-    padding-left: 14px;
-    line-height: 40px;
-    display: inline-block;
-    vertical-align: middle;
-    border: 1px solid #e8e8e8;
-    color: #555;
-    cursor: pointer;
-}
-
-#main .register-table .regbox .countryList{
-    display: none;
-    overflow: auto;
-    position: absolute;
-    background: #fff;
-    width: 330px;
-    height: 200px;
-    border: 1px solid #e8e8e8;
-    border-top: 0;
-}
-#main .register-table .regbox .countryList input{
-    width: 276px;
-    height: 35px;
-    margin: 14px;
-    padding-left: 9px;
     outline: none;
-}
-#main .register-table .regbox .countryList li{
-    cursor: pointer;
-    padding-left: 14px;
-    height: 40px;
-    font-size: 14px;
-    border-top: 1px solid #e8e8e8;
-    line-height: 40px;
-}
-#main .register-table .regbox .countryList li:hover{
-    background: #ccc;
-}
-#main .register-table .regbox .result-select{
-    float: left;
-    width: 275px;
-    border-right: 1px solid #e8e8e8;
-    cursor: pointer;
-}
-#main .register-table .regbox .countryInput span{
-    float: right;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-}
-#main .register-table .regbox .countryInput span i{
-    font-size: 20px;
-    color: #e8e8e8;
-    vertical-align: 50px;
-}
-#main .register-table .regbox .country-text{
-    margin-top: 4px;
-    margin-bottom: 15px;
-    font-size: 14px;
-    color: #333;
-}
-#main .register-table .regbox .phoneNumInput{
-    position: relative;
-    width: 328px;
-    height: 90px;
-}
-#main .register-table .regbox .phoneNumInput .phonewrap{
-    cursor: pointer;
-    float: left;
-    line-height: 40px;
-    padding-left: 9px;
-    width: 70px;
-    height: 40px;
     border: 1px solid #e8e8e8;
-    border-right: 0;
 }
-#main .register-table .regbox .phoneNumInput .phonewrap p{
-    float: left;
-    font-size: 14px;
-}
-#main .register-table .regbox .phoneNumInput .phonewrap i{
-    float: left;
-    margin: 17px 0 0 15px;
-    width: 0;
-    height: 0;
-    line-height: 0;
-    font-size: 0;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #9d9d9d transparent transparent transparent;
-}
-#main .register-table .regbox .phoneNumInput .inpNum{
-    width: 237px;
-    height: 40px;
-    border: 1px solid #e8e8e8;
-    outline: none;
-    padding-left: 9px;
-    float: right;
-}
-#main .register-table .regbox .prompt{
+#main .register-table .regbox form p{
     display: none;
     font-size: 14px;
+    margin-left: 10px;
     color: #ff6700;
 }
-#main .register-table .regbox .prompt i{
-    vertical-align: -1px;
-    margin-right: 5px;
-}
 
-#main .register-table .regbox .phoneList{
-    position: absolute;
-    top: 42px;
-    display: none;
-    overflow: auto;
-    position: absolute;
-    background: #fff;
-    width: 328px;
-    height: 200px;
-    border: 1px solid #e8e8e8;
-    border-top: 0;
-}
-#main .register-table .regbox .phoneList li{
-    cursor: pointer;
-    padding-left: 14px;
-    height: 40px;
-    font-size: 14px;
-    border-top: 1px solid #e8e8e8;
-    line-height: 40px;
-}
-#main .register-table .regbox .phoneList li:hover{
-    background: #ccc;
-}
-#main .register-table .regbox .phoneList input{
-    width: 276px;
-    height: 35px;
-    margin: 14px;
-    padding-left: 9px;
-    outline: none;
-}
+/* pass */
 
-
-
+#main .register-table .regbox form .pass{
+    width: 332px;
+    height: 100px;
+}
 #main .register-table .regbox button{
     width: 330px;
     height: 42px;
@@ -257,4 +141,7 @@ body{
 }
 #footer p a{
     color: #9d9d9d;
+}
+#footer .footer-nav li a:hover{
+    color: #333;
 }
