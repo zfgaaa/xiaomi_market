@@ -1,10 +1,18 @@
+
 /* title */
 #title{
+    /* position: fixed; */
+    top: -63px;
+    transition: top 0.5s;
+    width: 100%;
+    z-index: 999;
     height: 63px;
     border: 1px solid #e0e0e0;
     box-shadow: 5px 2px 10px #e0e0e0;
+    background: #fff;
 }
 #title .title-con{
+    position: relative;
     width: 1224px;
     height: 63px;
     margin: 0 auto;
@@ -33,6 +41,88 @@
 }
 #title .title-con ul li:last-child a{
     border-right: 0;
+}
+
+/* 下拉导航栏 */
+#title .title-con .allGoods{
+    position: absolute;
+    z-index: 999;
+    padding: 20px 0;
+    top: -1px;
+    left: 1px;
+    background-color: #fff;
+    width: 235px;
+    height: 420px;
+    border: 1px solid #ff6700;
+    display: none;
+}
+#title .title-con .allGoods li{
+    cursor: pointer;
+    padding-left: 30px;
+    padding-right: 24px;
+    width: 181px;
+    height: 42px;
+    line-height: 42px;
+}
+#title .title-con .allGoods li:hover{
+    background: #ff6700;
+}
+#title .title-con .allGoods li:hover a{
+    color: #fff;
+}
+#title .title-con .allGoods li a span:first-child{
+    float: left;
+}
+#title .title-con .allGoods li a span:last-child{
+    float: right;
+}
+#title .title-con .allGoods li a{
+    clear: both;
+    border: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+
+#title .title-con .swiper-nav{
+    display: none;
+    position: absolute;
+    z-index: 999;
+    box-shadow: 2px 2px 10px #ccc;
+    top: 0;
+    left: 236px;
+    height: 455px;
+    background: #fff;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+#title .title-con .swiper-nav .nav-con1{
+    float: left;
+}
+#title .title-con .swiper-nav .nav-con{
+    cursor: pointer;
+    transition: all 0.5s;
+    width: 235px;
+    height: 65px;
+    line-height: 72px;
+    margin-bottom: 7px;
+    margin-right: 8px;
+}
+#title .title-con .swiper-nav img{
+    width: 40px;
+    height: 40px;
+}
+#title .title-con .swiper-nav span{
+    font-size: 14px;
+    height: 75px;
+    width: 235px;
+    vertical-align: 15px;
+}
+#title .title-con .swiper-nav .nav-con:hover{
+    color: #ff6700;
+}
+#title .title-con .swiperListHide{
+    display: block;
 }
 
 
@@ -84,13 +174,38 @@
 /* swiper */
 #main .main-left .swiper{
     position: relative;
-    width: 560px;
-    height: 560px;
-}
-#main .main-left .swiper-con{
+    top: 80px;
     width: 560px;
     height: 560px;
     overflow: hidden;
+}
+#main .main-left .swiper-con{
+    position: absolute;
+    height: 560px;
+    width: 9999px;
+}
+#main .main-left .swiper-con .swiper-wrapper{
+    float: left;
+}
+#main .main-left .swiper-con .swiper-wrapper:nth-child(1) {
+    width: 560px;
+    height: 560px;
+    /* background:url(../images/detail-img/phone.jpg); */
+}
+#main .main-left .swiper-con .swiper-wrapper:nth-child(2) {
+    width: 560px;
+    height: 560px;
+    /* background:url(../images/detail-img/phone1.jpg); */
+}
+#main .main-left .swiper-con .swiper-wrapper:nth-child(3) {
+    width: 560px;
+    height: 560px;
+    /* background:url(../images/detail-img/phone2.jpg); */
+}
+#main .main-left .swiper-con .swiper-wrapper:nth-child(4) {
+    width: 560px;
+    height: 560px;
+    /* background:url(../images/detail-img/phone3.jpg); */
 }
 #main .main-left .swiper ul{
     position: absolute;
@@ -177,6 +292,7 @@
 
 /* 地址 */
 #main .main-right .address{
+    position: relative;
     width: 583px;
     height: 74px;
     background: #fafafa;
@@ -188,21 +304,128 @@
 #main .main-right .address p{
     font-size: 14px;
 }
-#main .main-right .address p span{
+#main .main-right .address p span:nth-child(1){
     font-size: 20px;
     margin-right: 6px;
     color: #a1a1a6;
 }
-#main .main-right .address p a{
+#main .main-right .address p .change{
     color: #ff6700;
     font-size: 14px;
     margin-left: 10px;
+    cursor: pointer;
 }
 #main .main-right .address em{
     color: #ff6700;
     font-style: normal;
     font-size: 14px;
     margin-left:25px;
+}
+/* pop */
+
+#main .main-right .address form{
+    position: absolute;
+    /* opacity: 0; */
+    display: none;
+    transition: display 0.3s;
+    top: -1px;
+    left: -1px;
+    background-color: #fff;
+    z-index: 99;
+    width: 546px;
+    padding: 30px;
+    border: 1px solid #ff6700;
+}
+#main .main-right .address form .searchAddress{
+    position: relative;
+    height: 44px;
+    border: 1px solid #e0e0e0;
+    position: relative;
+}
+#main .main-right .address form i{
+    position: absolute;
+    top: 50%;
+    color: #757575;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 1;
+    margin-top: -15px;
+    margin-left: 15px;
+    text-align: center;
+
+}
+#main .main-right .address form .searchAddress input{
+    outline: none;
+    width: 356px;
+    height: 44px;
+    padding: 0 56px;
+    line-height: 44px;
+    border: none;
+}
+#main .main-right .address form .searchAddress .wrong{
+    
+    position: absolute;
+    right: 15px;
+    top: 8px;
+    display: block;
+    display: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 25px;
+    text-align: center;
+    line-height: 25px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #e0e0e0;
+}
+#main .main-right .address form .chooseAddress {
+    height: 39px;
+    line-height: 39px;
+    border-bottom: 1px solid #ccc;
+}
+#main .main-right .address form .chooseAddress a{
+    cursor: pointer;
+    float: right;
+    font-size: 14px;
+    color: #ccc;
+}
+#main .main-right .address form ul {
+    /* display: none; */
+}
+#main .main-right .address form ul li {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-size: 14px;
+    padding-left: 28px;
+    height: 70px;
+    line-height: 70px;
+    border-bottom: 1px solid #f0f0f0;
+}
+#main .main-right .address form ul li:hover{
+    background: #f0f0f0;
+}
+#main .main-right .address form ul li:hover span:last-child{
+    left: 400px;
+}
+#main .main-right .address form ul li span:first-child{
+    font-size: 14px;
+    color: #333;
+}
+#main .main-right .address form ul li span:last-child{
+    position: absolute;
+    transition: all 0.3s;
+    text-align: center;
+    top: 20px;
+    left: 550px;
+    width: 100px;
+    height: 32px;
+    line-height: 32px;
+    color: #fff;
+    background-color: #ff6700;
+    border: 0;
+    cursor: pointer;
 }
 
 /* 选择版本 */
@@ -226,7 +449,7 @@
 }
 #main .phoneList .listCon:nth-child(2){
     margin-right: 6px;
-    border:1px solid #ff6700;
+    /* border:1px solid #ff6700; */
 }
 #main .phoneList .listCon:nth-child(2) span:first-child{
     color: #ff6700;
@@ -245,7 +468,9 @@
     font-size: 12px;
     color: #e0e0e0;
 }
-
+#main .phoneList .changeEdition{
+    border: 1px solid #ff6700;
+}
 /* 选择颜色 */
 #main .phoneColor {
     height: 81px;
@@ -261,6 +486,7 @@
     height: 12px;
 }
 #main .phoneColor .phoneColorList{
+    float: left;
     cursor: pointer;
     text-align: center;
     width: 298px;
@@ -269,7 +495,9 @@
     line-height: 44px;
     border:1px solid #ff6700;
 }
-
+#main .phoneColor .phoneColorList:nth-child(2){
+    margin-right: 6px; 
+}
 #main .phoneColor .phoneColorList span:last-child{
     font-size: 12px;
     line-height: 12px;
@@ -296,9 +524,9 @@
     height: 139px;
     border: 1px solid #e0e0e0;
 }
-#main .phoneServer .phoneServerList:last-child{
+/* #main .phoneServer .phoneServerList:last-child{
     border-top: 0;
-}
+} */
 #main .phoneServerList .left{
     position: relative;
     width: 55px;
@@ -308,6 +536,7 @@
 #main .phoneServerList .left em{
     cursor: pointer;
     position: absolute;
+    text-align: center;
     right: 0;
     top: 53px;
     display: block;
@@ -318,6 +547,17 @@
     height: 18px;
     line-height: 18px;
 
+}
+
+/* em的隐藏显示 */
+#main .phoneServerList .left .hideEm{
+    background: #ff6700;
+    color: #fff;
+}
+
+/* phoneServarList的边框显示和隐藏 */
+#main .phoneServer .ServerListHide{
+    border: 1px solid #ff6700;
 }
 #main .phoneServerList .center{
     position: relative;
@@ -339,28 +579,18 @@
 }
 #main .phoneServerList .right p:first-child{
     font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 30px;
 }
 #main .phoneServerList .right p:nth-child(2){
-    font-size: 12px;
-    margin-top: 0;
+    font-size: 14px;
     color: #b0b0b0;
 }
 #main .phoneServerList .right p:nth-child(3){
     font-size: 12px;
     margin-top: 0;
 }
-#main .phoneServerList .right p:nth-child(3) em{
-    cursor: pointer;
-    display: block;
-    width: 14px;
-    height: 16px;
-    font-size: 12px;
-    color: #fff;
-    text-align: center;
-    line-height: 16px;
-    border: 1px solid #b0b0b0;
-    float: left;
-}
+
 #main .phoneServerList .right p:nth-child(3) span{
     display: block;
     float: left;
@@ -369,9 +599,7 @@
     margin-right: 5px;
     margin-left: 5px;
 }
-#main .phoneServerList .right p:nth-child(3) a{
-    float: left;
-}
+
 #main .phoneServerList .right p:nth-child(3) span:last-child{
     float: right;
 }
@@ -384,6 +612,31 @@
     height: 102px;
     margin-top: 30px;
     background: #f9f9fa;
+}
+#main .main-right .phonePrice p{
+    line-height: 12px;
+    position: relative;
+    font-size: 12px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+#main .main-right .phonePrice p:nth-child(2){
+    display: none;
+}
+#main .main-right .phonePrice p:nth-child(3){
+    display: none;
+}
+#main .main-right .phonePrice p:nth-child(2) span:nth-child(2){
+    float: right;
+    margin-right: 30px;
+}
+#main .main-right .phonePrice p:nth-child(3) span:nth-child(2){
+    float: right;
+    margin-right: 30px;
+}
+#main .main-right .phonePrice p .serverHide{
+    display: block;
+}
 }
 #main .main-right .phonePrice p:first-child{
     line-height: 12px;

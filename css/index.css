@@ -416,6 +416,123 @@
 /* main */
 
 
+/* 固定 */
+#main .fixed {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    margin-top: -100px;
+    bottom: 0;
+    /* left: 0; */
+    width: 82px;
+    height: 380px;
+}
+/* 个人中心 */
+#main .fixed .personalBtn {
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    padding-top: 60px;
+    width: 82px;
+    height: 30px;
+    border-bottom: 1px solid #f5f5f5;
+    background-color: #fff;
+    background-image: url(../images/index-img/personal1.png);
+    background-repeat: no-repeat;  
+    background-position: center 20px;
+    background-size: 30px 30px; 
+}
+#main .fixed .personalBtn p {
+    font-size: 14px;
+    color: #757575;
+}
+
+#main .fixed .personalBtn:hover{
+    background-image: url(../images/index-img/personal2.png);
+}
+#main .fixed .personalBtn:hover p{
+   color: #ff6700;
+}
+/* 联系客服 */
+#main .fixed .callBtn {
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    padding-top: 60px;
+    width: 82px;
+    height: 30px;
+    margin-bottom: 1px;
+    background-color: #fff;
+    background-image: url(../images/index-img/kefu1.png);
+    background-repeat: no-repeat;  
+    background-position: center 20px;
+    background-size: 30px 30px; 
+}
+#main .fixed .callBtn p {
+    font-size: 14px;
+    color: #757575;
+}
+
+#main .fixed .callBtn:hover{
+    background-image: url(../images/index-img/kefu2.png);
+}
+#main .fixed .callBtn:hover p{
+   color: #ff6700;
+}
+
+/* 购物车 */
+#main .fixed .shopCarBtn {
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    padding-top: 60px;
+    width: 82px;
+    height: 30px;
+    background-color: #fff;
+    background-image: url(../images/index-img/shopCar1.png);
+    background-repeat: no-repeat;  
+    background-position: center 20px;
+    background-size: 30px 30px; 
+}
+#main .fixed .shopCarBtn p {
+    font-size: 14px;
+    color: #757575;
+}
+
+#main .fixed .shopCarBtn:hover{
+    background-image: url(../images/index-img/shopCar2.png);
+}
+#main .fixed .shopCarBtn:hover p{
+   color: #ff6700;
+}
+
+/* 回到顶部 */
+#main .fixed .backTop {
+    display: none;
+    text-align: center;
+    padding-top: 60px;
+    width: 82px;
+    height: 30px;
+    margin-top: 18px;
+    background-color: #fff;
+    background-image: url(../images/index-img/totop.png);
+    background-repeat: no-repeat;  
+    background-position: center 20px;
+    background-size: 30px 30px; 
+}
+#main .fixed .backTop p {
+    font-size: 14px;
+    color: #757575;
+}
+
+#main .fixed .backTop:hover{
+    background-image: url(../images/index-img/totop_hover.png);
+}
+#main .fixed .backTop:hover p{
+   color: #ff6700;
+}
+
+
 #main{
     height: 7000px;
     background: #f5f5f5;
@@ -1528,15 +1645,19 @@
     cursor: pointer;
     float: left;
     padding-bottom: 2px;
-    margin: 4px 15px;
-    font-size: 14px;
+    padding: 4px 15px;
+   
     color: #333;
-    transition: border 0.3s;
+    
 }
-#main .around .around-nav li:hover{
+#main .around .around-nav li:hover a{
     border-bottom: 2px solid #ff6700;
     color: #ff6700;
 
+}
+#main .around .around-nav li a{
+    transition: border 0.3s;
+     font-size: 14px;
 }
 #main .around .around-nav li:last-child{
     margin-right: 0;
@@ -1560,7 +1681,14 @@
 }
 
 /* right */
+#main .around .buttom {
+    position: relative;
+}
 #main .around .buttom .right{
+    position: absolute;
+    top: 0;
+    left: 234px;
+    display: none;
     width: 990px;
     height: 614px;
     float: right;
@@ -1660,12 +1788,13 @@
      padding-left: 30px;
      float: left;
  }
- #main .around .buttom .right .around-con:nth-child(8) .right img{
-     width: 100px;
+ #main .around .buttom .right .around-con:nth-child(8) .right_con img{
+    position: static;
+    width: 100px;
      height: 100px;
      margin-top: 20px;
  }
- #main .around .buttom .right .around-con:nth-child(8) .right{
+ #main .around .buttom .right .around-con:nth-child(8) .right_con{
     width: 100px;
     height: 143px;
     margin-right: 10px;
@@ -1697,15 +1826,16 @@
     float: left;
 }
 
-#main .around .buttom .right .around-con:nth-child(9) .right{
-   width: 100px;
+#main .around .buttom .right .around-con:nth-child(9) .right_con{
+    position: static;
+    width: 100px;
    height: 143px;
    margin-right: 10px;
    text-align: center;
    line-height: 143px;
    float: right;
 }
-#main .around .buttom .right .around-con:nth-child(9) .right i{
+#main .around .buttom .right .around-con:nth-child(9) .right_con i{
     font-size: 50px;
     color: #ff6700;
 }
@@ -1719,7 +1849,10 @@
 #main .around .buttom .right .around-con:nth-child(9) .left span{
    font-size: 12px;
 }
-
+/* 隐藏显示right */
+#main .main-con .around .buttom .aroundHideRight{
+    display: block;
+}
 
 /* *******************为你推荐**************** */
 
@@ -1731,6 +1864,19 @@
     margin-top: 42px;
     width: 1224px;
     height: 57px;
+}
+#main .recommend .buttom {
+    position: relative;
+    width: 1224px;
+    height: 300px;
+    overflow: hidden;
+}
+#main .recommend .buttom .buttom-con{
+    transition: all 1s;
+    position: absolute;
+    width: 9999px;
+    left: 0;
+    top: 0;
 }
 #main .recommend .top .title{
     font-size: 22px;
@@ -1753,6 +1899,7 @@
 }
 #main .recommend .top .btn i:first-child{
     border-right: 0;
+    color: #ccc;
 }
 
 #main .recommend .buttom .recommend-con{
@@ -1897,15 +2044,15 @@
     color: #333;
 }
 #main .content .buttom .content-con{
+    position: relative;
+    overflow: hidden;
     cursor: pointer;
     position: relative;
     transition: all 0.5s;
     top: 0;
     padding-top: 49px;
-    padding-left: 35px;
-    padding-right: 35px;
     text-align: center;
-    width: 226px;
+    width: 296px;
     height: 380px;
     background: #fff;
     float: left;
@@ -1923,7 +2070,7 @@
 }
 
 
-#main .content .buttom .content-con .title{
+#main .content .buttom .title{
     font-size: 14px;
     line-height: 14px;
     color: #ffbd42;
@@ -1951,7 +2098,18 @@
     width: 216px;
     height: 154px;
 }
+
+#main .content .buttom .content-con .item-con{
+    position: absolute;
+    transition: left 0.5s;
+    left: 0;
+    width: 9999px;
+    height: 340px;
+}
 #main .content .buttom .content-con .item{
+    float: left;
+    padding-left: 35px;
+    padding-right: 35px;
     width: 226px;
     height: 340px;
 }
@@ -1978,125 +2136,6 @@
     background: #ff6700;
 }
 
-
-/* MIUI主题 */
-#main .content .buttom .content-con:nth-child(2){
-    border-top: 1px solid #83c44e;
-}
-#main .content .buttom .content-con:nth-child(2) .title{
-    font-size: 14px;
-    line-height: 14px;
-    color: #83c44e;
-}   
-#main .content .buttom .content-con:nth-child(2) li .name{
-    font-size: 20px;
-    line-height: 20px;
-    margin-top: 25px; 
-    color: #333;
-}
-#main .content .buttom .content-con:nth-child(2) li .intro{
-    font-size: 14px;
-    color: #b0b0b0;
-    line-height: 20px;
-    margin-top: 9px;
-    margin-bottom: 15px;
-}
-#main .content .buttom .content-con:nth-child(2) li .price{
-    font-size: 14px;
-    line-height: 14px;
-    margin-bottom: 20px;
-    color: #333;
-}
-#main .content .buttom .content-con:nth-child(2) li img{
-    width: 216px;
-    height: 154px;
-}
-#main .content .buttom .content-con:nth-child(2) .item{
-    width: 226px;
-    height: 340px;
-}
-#main .content .buttom .content-con:nth-child(2) ol{
-    position: absolute;
-    left: 100px;
-    bottom: 10px;
-}
-#main .content .buttom .content-con:nth-child(2) ol li{
-    transition: all 0.4s;
-    cursor: pointer;
-    display: inline-block;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    margin: 0 10px;
-    background: #b0b0b0;
-}
-#main .content .buttom .content-con:nth-child(2) ol li.bot{
-    border: 1px solid #ff6700;
-    background: #fff;
-}
-#main .content .buttom .content-con:nth-child(2) ol .bot~li:hover{
-    background: #ff6700;
-}
-
-
-/* 游戏 */
-#main .content .buttom .content-con:nth-child(3){
-    border-top: 1px solid #ea605d;
-}
-#main .content .buttom .content-con:nth-child(3) .title{
-    font-size: 14px;
-    line-height: 14px;
-    color: #ea605d;
-}   
-#main .content .buttom .content-con:nth-child(3) li .name{
-    font-size: 20px;
-    line-height: 20px;
-    margin-top: 25px; 
-    color: #333;
-}
-#main .content .buttom .content-con:nth-child(3) li .intro{
-    font-size: 14px;
-    color: #b0b0b0;
-    line-height: 20px;
-    margin-top: 9px;
-    margin-bottom: 15px;
-}
-#main .content .buttom .content-con:nth-child(3) li .price{
-    font-size: 14px;
-    line-height: 14px;
-    margin-bottom: 20px;
-    color: #333;
-}
-#main .content .buttom .content-con:nth-child(3) li img{
-    width: 216px;
-    height: 154px;
-}
-#main .content .buttom .content-con:nth-child(3) .item{
-    width: 226px;
-    height: 340px;
-}
-#main .content .buttom .content-con:nth-child(3) ol{
-    position: absolute;
-    left: 100px;
-    bottom: 10px;
-}
-#main .content .buttom .content-con:nth-child(3) ol li{
-    transition: all 0.4s;
-    cursor: pointer;
-    display: inline-block;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    margin: 0 10px;
-    background: #b0b0b0;
-}
-#main .content .buttom .content-con:nth-child(3) ol li.bot{
-    border: 1px solid #ff6700;
-    background: #fff;
-}
-#main .content .buttom .content-con:nth-child(3) ol .bot~li:hover{
-    background: #ff6700;
-}
 /* =================btn_left,,,btn_right============== */
 #main .content .buttom .content-con .btn_left{
     position: absolute;
